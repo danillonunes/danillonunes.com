@@ -19,3 +19,10 @@ api = 2
 ; ------------
 
 projects[] = drupal
+
+; Contrib modules
+; ------------
+
+; Pathauto
+projects[pathauto][version] = 1.0-beta1
+projects[pathauto][subdir] = contrib
