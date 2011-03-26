@@ -1,0 +1,12 @@
+#!/bin/sh
+
+MAKEFILE='danillonunes.make'
+DRUPALPATH='drupal'
+TRANSLATIONS='pt-br'
+
+LOCALSITESPATH='site'
+LOCALSITESDOMAIN='d7.danillonunes.net'
+
+rm -rf $DRUPALPATH
+drush make --translations=$TRANSLATIONS $MAKEFILE $DRUPALPATH
+ln -s $LOCALSITESPATH $DRUPALPATH/sites/$LOCALSITESDOMAIN
