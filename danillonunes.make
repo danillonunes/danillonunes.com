@@ -26,3 +26,7 @@ projects[] = drupal
 ; Pathauto
 projects[pathauto][version] = 1.0-beta1
 projects[pathauto][subdir] = contrib
+
+; Token
+projects[token][version] = 1.0-beta1
+projects[token][subdir] = contrib
