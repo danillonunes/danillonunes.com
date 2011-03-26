@@ -38,3 +38,10 @@ projects[transliteration][subdir] = contrib
 ; Wysiwyg
 projects[wysiwyg][version] = 2.0
 projects[wysiwyg][subdir] = contrib
+
+; Contrib themes
+; ------------
+
+; Tao
+projects[tao][version] = 3.0-beta3
+projects[tao][subdir] = contrib
