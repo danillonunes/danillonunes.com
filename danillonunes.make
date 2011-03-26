@@ -49,3 +49,11 @@ projects[tao][subdir] = contrib
 ; Rubik
 projects[rubik][version] = 4.0-beta5
 projects[rubik][subdir] = contrib
+
+; Contrib libraries
+; ------------
+
+; CKEditor
+libraries[ckeditor][download][type] = svn
+libraries[ckeditor][download][url] = http://svn.ckeditor.com/CKEditor/releases/stable
+libraries[ckeditor][directory_name] = ckeditor
