@@ -45,3 +45,7 @@ projects[wysiwyg][subdir] = contrib
 ; Tao
 projects[tao][version] = 3.0-beta3
 projects[tao][subdir] = contrib
+
+; Rubik
+projects[rubik][version] = 4.0-beta5
+projects[rubik][subdir] = contrib
