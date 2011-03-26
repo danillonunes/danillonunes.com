@@ -34,3 +34,7 @@ projects[token][subdir] = contrib
 ; Transliteration
 projects[transliteration][version] = 3.0-alpha1
 projects[transliteration][subdir] = contrib
+
+; Wysiwyg
+projects[wysiwyg][version] = 2.0
+projects[wysiwyg][subdir] = contrib
