@@ -30,3 +30,7 @@ projects[pathauto][subdir] = contrib
 ; Token
 projects[token][version] = 1.0-beta1
 projects[token][subdir] = contrib
+
+; Transliteration
+projects[transliteration][version] = 3.0-alpha1
+projects[transliteration][subdir] = contrib
