@@ -23,6 +23,8 @@ projects[pathauto][version] = 1.0-beta1
 
 projects[token][version] = 1.0-beta1
 
+projects[translation_management][version] = 1.0-beta1
+
 projects[transliteration][version] = 3.0-alpha1
 
 projects[wysiwyg][version] = 2.0
