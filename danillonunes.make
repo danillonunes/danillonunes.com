@@ -19,6 +19,8 @@ projects[] = drupal
 ; Contrib modules
 ; ------------
 
+projects[backup_migrate][version] = 2.1
+
 projects[pathauto][version] = 1.0-beta1
 
 projects[token][version] = 1.0-beta1
