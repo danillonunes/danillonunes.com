@@ -31,6 +31,8 @@ projects[transliteration][version] = 3.0-alpha1
 
 projects[wysiwyg][version] = 2.0
 
+projects[zen][version] = 3.0
+
 ; Contrib themes
 ; ------------
 
