@@ -40,9 +40,12 @@ body {
  * Header
  */
 #header {
+  background: #111 url('../images/header-bg-texture.png');
+  color: #fff;
 }
 
 #header .section {
+  background: url('../images/header-bg-light.png') bottom left repeat-x;
 }
 
 #logo /* Wrapping link for logo */ {
