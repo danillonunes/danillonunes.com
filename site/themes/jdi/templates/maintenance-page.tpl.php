@@ -33,14 +33,14 @@
       <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
-            <div id="site-name"><strong>
+            <div id="site-name" class="element-invisible"><strong>
               <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home">
               <span><?php print $site_name; ?></span>
               </a>
             </strong></div>
           <?php endif; ?>
           <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
+            <div id="site-slogan" class="element-invisible"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div><!-- /#name-and-slogan -->
       <?php endif; ?>
