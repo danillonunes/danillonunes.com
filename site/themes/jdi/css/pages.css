@@ -44,8 +44,11 @@ body {
   color: #fff;
 }
 
-#header .section {
+#header-inner {
   background: url('../images/header-bg-light.png') bottom left repeat-x;
+}
+
+#header .section {
 }
 
 #logo /* Wrapping link for logo */ {

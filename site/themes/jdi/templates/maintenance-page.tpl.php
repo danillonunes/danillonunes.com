@@ -24,7 +24,11 @@
 
   <div id="page-wrapper"><div id="page">
 
-    <div id="header"><div class="section clearfix">
+    <div id="header-wrapper">
+    <div id="header">
+    <div id="header-inner">
+    <div class="section clearfix">
+    <!-- Yeah, I love a lot of markup -->
 
       <?php if ($logo): ?>
         <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -47,7 +51,10 @@
 
       <?php print $header; ?>
 
-    </div></div><!-- /.section, /#header -->
+    </div>
+    </div>
+    </div>
+    </div><!-- /#header-inner, /.section, /#header, /#header-wrapper -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($navigation) { print ' with-navigation'; } ?>">
 

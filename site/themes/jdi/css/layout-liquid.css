@@ -37,6 +37,9 @@ body {
 }
 
 #header .section {
+  margin: 0 auto;
+  padding: 10px;
+  width: 940px;
 }
 
 .region-header {
@@ -50,6 +53,8 @@ body {
 }
 
 #main {
+  margin: 0 auto;
+  width: 960px;
 }
 
 /*
@@ -143,6 +148,8 @@ body {
  * Footer
  */
 .region-footer {
+  margin: 0 auto;
+  width: 960px;
 }
 
 /*
