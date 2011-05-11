@@ -9,9 +9,18 @@
 
 
 /*
+ * Html
+ */
+html {
+  background: url('../images/page-bg-texture.jpg');
+}
+
+
+/*
  * Body
  */
 body {
+  background: url('../images/page-bg.png');
   margin: 0;
   padding: 0;
 }
