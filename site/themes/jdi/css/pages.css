@@ -59,9 +59,21 @@ body {
 }
 
 #logo /* Wrapping link for logo */ {
+  background: url('../images/logo-sprite.png') no-repeat scroll 0 3px transparent;
   float: left; /* LTR */
+  height: 74px;
   margin: 0;
+  margin-left: -30px;
   padding: 0;
+  width: 400px;
+  text-indent: -99999px;
+}
+
+#logo:hover,
+#logo:focus,
+#logo:active {
+  background-position: 0 -78px;
+  outline: 0;
 }
 
 #logo img {
