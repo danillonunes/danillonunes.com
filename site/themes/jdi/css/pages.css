@@ -39,6 +39,13 @@ body {
 /*
  * Header
  */
+#header-wrapper {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
 #header {
   background: #111 url('../images/header-bg-texture.png');
   color: #fff;
