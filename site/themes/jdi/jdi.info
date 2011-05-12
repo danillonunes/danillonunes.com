@@ -33,6 +33,8 @@ base theme  = zen
 ; useful feature. See the excellent Drupal 7 Theme Guide at
 ; http://drupal.org/node/263967 for more details.
 
+stylesheets[all][]        = formalize/assets/css/formalize.css
+
 stylesheets[all][]        = css/html-reset.css
 stylesheets[all][]        = css/wireframes.css
 stylesheets[all][]        = css/layout-liquid.css
@@ -65,7 +67,7 @@ stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+scripts[] = formalize/assets/js/jquery.formalize.min.js
 
 
 
