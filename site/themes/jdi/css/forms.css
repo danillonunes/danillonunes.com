@@ -8,6 +8,10 @@
   margin: 1.5em 0;
 }
 
+.resizable .grippie {
+  display: none;
+}
+
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error /* Highlight the form elements that caused a form submission error */ {
