@@ -21,6 +21,8 @@ projects[] = drupal
 
 projects[backup_migrate][version] = 2.1
 
+projects[ctools][version] = 1.0-alpha4
+
 projects[pathauto][version] = 1.0-beta1
 
 projects[token][version] = 1.0-beta1
@@ -28,6 +30,8 @@ projects[token][version] = 1.0-beta1
 projects[translation_management][version] = 1.0-beta1
 
 projects[transliteration][version] = 3.0-alpha1
+
+projects[views][version] = 3.0-beta3
 
 projects[wysiwyg][version] = 2.0
 
