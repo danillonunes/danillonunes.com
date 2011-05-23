@@ -12,5 +12,4 @@
 #navigation ul.links li, /* A simple method to get navigation links to appear in one line. */
 #navigation .content li {
   float: right;
-  padding: 0 0 0 10px;
 }
