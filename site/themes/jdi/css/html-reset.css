@@ -331,13 +331,20 @@ button {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
+  color: #24f;
+  text-decoration: none;
+     -moz-transition: color .2s;
+       -o-transition: color .2s;
+/*  -webkit-transition: color .2s; disabled until fix webkit :visited:hover bug*/
 }
 
 a:visited {
+  color: #666;
 }
 
 a:hover,
 a:focus {
+  color: #222;
 }
 
 a:active {
