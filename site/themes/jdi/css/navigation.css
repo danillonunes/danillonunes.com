@@ -51,7 +51,8 @@ li a.active {
 #main-menu a {
   color: #ccc;
   display: block;
-  padding: 0 25px;
+  line-height: 84px;
+  padding: 10px 25px 0;
   text-decoration: none;
   text-shadow: 0 0 10px #444;
   z-index: 10;
