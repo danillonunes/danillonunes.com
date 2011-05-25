@@ -16,7 +16,7 @@ li a.active {
  */
 #navigation {
   line-height: 94px; /* Header height. */
-  margin-top: -114px; /* Header height + margin. */
+  margin-top: -94px;
   margin-left: 400px;  /* Logo width. */
   width: auto;
   /* overflow: hidden; /* Sometimes you want to prevent overlapping with main div. */
