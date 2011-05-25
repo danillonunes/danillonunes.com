@@ -133,6 +133,12 @@ div#site-name /* The name of the website */ {
 }
 
 #content .section {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e8e8e8;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 #content a {
