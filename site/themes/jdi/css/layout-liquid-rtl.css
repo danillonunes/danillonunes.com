@@ -15,11 +15,11 @@
 
 .sidebar-first #content .section {
   padding-left: 0;
-  padding-right: 200px; /* The width + right margin of .region-sidebar-first. */
+  padding-right: 300px; /* The width + right margin of .region-sidebar-first. */
 }
 
 .sidebar-second #content .section {
-  padding-left: 200px; /* The width + left margin of .region-sidebar-second. */
+  padding-left: 300px; /* The width + left margin of .region-sidebar-second. */
   padding-right: 0;
 }
 
@@ -37,7 +37,7 @@
  */
 .region-sidebar-first {
   float: right;
-  margin-left: -200px; /* Negative value of .region-sidebar-first's width + right margin. */
+  margin-left: -300px; /* Negative value of .region-sidebar-first's width + right margin. */
   margin-right: 0;
 }
 
@@ -51,7 +51,7 @@
 .region-sidebar-second {
   float: left;
   margin-left: 0;
-  margin-right: -200px; /* Negative value of .region-sidebar-second's width + left margin. */
+  margin-right: -300px; /* Negative value of .region-sidebar-second's width + left margin. */
 }
 
 .region-sidebar-second .section {
