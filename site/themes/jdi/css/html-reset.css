@@ -138,9 +138,12 @@ hr, table, fieldset {
 }
 
 /* Headings */
+h1, h2, h3 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+  line-height: 1.3em;
+}
 h1 {
   font-size: 2em;
-  line-height: 1.5em;
   margin: 0.75em 0;
   /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
      margin specified in ems is relative to the element's font-size, not to the
@@ -150,8 +153,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
-  margin: 1em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+  font-size: 1.8em;
+  margin: 0.833em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.8 = 0.833em */
 }
 
 h3 {
