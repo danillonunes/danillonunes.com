@@ -31,7 +31,7 @@ projects[l10n_update][version] = 1.0-beta1
 
 projects[pathauto][version] = 1.0-beta1
 
-projects[token][version] = 1.0-beta1
+projects[token][version] = 1.0-beta2
 
 projects[translation_management][version] = 1.0-beta1
 
