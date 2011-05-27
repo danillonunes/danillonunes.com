@@ -27,7 +27,7 @@ projects[environment_indicator][version] = 1.0
 
 projects[features][version] = 1.0-beta2
 
-projects[l10n_update][version] = 1.0-alpha3
+projects[l10n_update][version] = 1.0-beta1
 
 projects[pathauto][version] = 1.0-beta1
 
