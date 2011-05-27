@@ -14,7 +14,7 @@ api = 2
 ; Core project
 ; ------------
 
-projects[] = drupal
+projects[drupal][version] = 7.2
 
 ; Contrib modules
 ; ------------
