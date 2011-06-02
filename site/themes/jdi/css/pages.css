@@ -291,7 +291,11 @@ ul.links li {
  * Footer
  */
 .region-footer {
-  padding-bottom: 1em;
+  padding: 1em 0;
+}
+
+.region-footer .block p {
+  margin: 0;
 }
 
 /*

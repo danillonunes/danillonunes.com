@@ -26,7 +26,8 @@ h2.block-title /* Block title */ {
 .block .content /* Block's content wrapper */ {
 }
 
-.sidebar .block {
+.sidebar .block,
+.region-footer .block {
   padding: 10px;
 }
 
