@@ -31,6 +31,11 @@ projects[l10n_update][version] = 1.0-beta1
 
 projects[pathauto][version] = 1.0-beta1
 
+projects[smtp][type] = module
+projects[smtp][download][type] = git
+projects[smtp][download][url] = http://git.drupal.org/project/smtp.git
+projects[smtp][download][branch] = 7.x-1.x
+
 projects[token][version] = 1.0-beta2
 
 projects[translation_management][version] = 1.0-beta1
