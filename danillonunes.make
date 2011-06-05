@@ -44,7 +44,7 @@ projects[transliteration][version] = 3.0-alpha1
 
 projects[views][version] = 3.0-beta3
 
-projects[wysiwyg][version] = 2.0
+; projects[wysiwyg][version] = 2.0
 
 projects[zen][version] = 3.0
 
@@ -58,6 +58,6 @@ projects[tao][version] = 3.0-beta3
 ; Contrib libraries
 ; ------------
 
-libraries[ckeditor][download][type] = svn
-libraries[ckeditor][download][url] = http://svn.ckeditor.com/CKEditor/releases/stable
-libraries[ckeditor][directory_name] = ckeditor
+; libraries[ckeditor][download][type] = svn
+; libraries[ckeditor][download][url] = http://svn.ckeditor.com/CKEditor/releases/stable
+; libraries[ckeditor][directory_name] = ckeditor
