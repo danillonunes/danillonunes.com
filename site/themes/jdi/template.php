@@ -99,9 +99,11 @@ function jdi_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function jdi_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  // Hide node submitted information outside node page.
+  if (!$variables['page']) {
+    $variables['display_submitted'] = FALSE;
+  }
 
   // Optionally, run node-type-specific preprocess functions, like
   // jdi_preprocess_node_page() or jdi_preprocess_node_story().
@@ -110,7 +112,6 @@ function jdi_preprocess_node(&$variables, $hook) {
     $function($variables, $hook);
   }
 }
-// */
 
 /**
  * Override or insert variables into the comment templates.
