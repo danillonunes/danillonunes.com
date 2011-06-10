@@ -62,11 +62,15 @@ body {
  */
 #content {
   float: left; /* LTR */
-  width: 660px;
+  width: 960px;
   margin-left: 0; /* LTR */
   margin-right: -100%; /* LTR */ /* Negative value of #content's width + left margin. */
   margin-top: 3em;
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.one-sidebar #content {
+  width: 660px;
 }
 
 #content .section {
