@@ -1,0 +1,5 @@
+name = DN Reinvigorate
+description = Add reinvigorate tracking code.
+package = danillonunes
+core = 7.x
+version = "7.x-0.1"

@@ -1,0 +1,10 @@
+<?php
+
+function dn_reinvigorate_init() {
+  drupal_add_js('http://include.reinvigorate.net/re_.js',
+    array('type' => 'external', 'scope' => 'footer')
+  );
+  drupal_add_js('try { reinvigorate.track("b7dpl-4y3vm2858r"); } catch(err) {}',
+    array('type' => 'inline', 'scope' => 'footer')
+  );
+}
