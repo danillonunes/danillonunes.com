@@ -69,6 +69,11 @@ body {
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 
+.region-sidebar-first,
+.region-sidebar-second {
+  margin-top: 3em;
+}
+
 .one-sidebar #content {
   width: 660px;
 }
