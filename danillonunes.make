@@ -35,6 +35,10 @@ projects[globalredirect][version] = 1.3
 
 projects[l10n_update][version] = 1.0-beta2
 
+projects[media][version] = 1.0-beta4
+
+projects[media_browser_plus][version] = 1.0-beta2
+
 projects[pathauto][version] = 1.0-beta1
 
 projects[redirect][version] = 1.0-beta3
@@ -43,6 +47,8 @@ projects[smtp][type] = module
 projects[smtp][download][type] = git
 projects[smtp][download][url] = http://git.drupal.org/project/smtp.git
 projects[smtp][download][branch] = 7.x-1.x
+
+projects[styles][version] = 2.0-alpha8
 
 projects[token][version] = 1.0-beta2
 
