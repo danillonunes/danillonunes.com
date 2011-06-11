@@ -54,7 +54,7 @@ projects[views][version] = 3.0-beta3
 
 ; projects[wysiwyg][version] = 2.0
 
-projects[zen][version] = 3.0
+projects[zen][version] = 3.1
 
 ; Contrib themes
 ; ------------
