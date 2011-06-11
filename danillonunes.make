@@ -33,7 +33,7 @@ projects[features][version] = 1.0-beta2
 
 projects[globalredirect][version] = 1.3
 
-projects[l10n_update][version] = 1.0-beta1
+projects[l10n_update][version] = 1.0-beta2
 
 projects[pathauto][version] = 1.0-beta1
 
