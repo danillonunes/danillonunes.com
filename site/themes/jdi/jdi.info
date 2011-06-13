@@ -35,6 +35,8 @@ base theme  = zen
 
 stylesheets[all][]        = formalize/assets/css/formalize.css
 
+stylesheets[all][]        = css/classes.css
+
 stylesheets[all][]        = css/html-reset.css
 stylesheets[all][]        = css/wireframes.css
 stylesheets[all][]        = css/layout-liquid.css
