@@ -7,6 +7,8 @@
 
 
 .node /* Node wrapper */ {
+  border-bottom: 1px dashed #ddd;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
