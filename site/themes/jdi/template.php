@@ -105,6 +105,11 @@ function jdi_preprocess_node(&$variables, $hook) {
     $variables['display_submitted'] = FALSE;
   }
 
+  // Hide "Comment add" link when "N Comments" links is already present.
+  if ($variables['comment_count']) {
+    unset($variables['content']['links']['comment']['#links']['comment-add']);
+  }
+
   // Optionally, run node-type-specific preprocess functions, like
   // jdi_preprocess_node_page() or jdi_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
