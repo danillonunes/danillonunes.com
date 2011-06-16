@@ -1,10 +1,46 @@
 <?php
 
+/**
+ * Implements hook_init().
+ *
+ * Insert Reinvigorate's javascript code into page.
+ */
 function dn_reinvigorate_init() {
-  drupal_add_js('http://include.reinvigorate.net/re_.js',
-    array('type' => 'external', 'scope' => 'footer')
+  $track_code = variable_get('dn_reinvigorate_code', FALSE);
+  if ($track_code) {
+    drupal_add_js('http://include.reinvigorate.net/re_.js',
+      array('type' => 'external', 'scope' => 'footer')
+    );
+    drupal_add_js("try { reinvigorate.track('$track_code'); } catch(err) {}",
+      array('type' => 'inline', 'scope' => 'footer')
+    );
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function dn_reinvigorate_menu() {
+  return array(
+    'admin/config/services/dn-reinvigorate' => array(
+      'title' => 'DN Reinvigorate',
+      'description' => 'Set up Reinvigorate track code',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('dn_reinvigorate_settings'),
+      'access arguments' => array('administer site configuration'),
+    )
   );
-  drupal_add_js('try { reinvigorate.track("b7dpl-4y3vm2858r"); } catch(err) {}',
-    array('type' => 'inline', 'scope' => 'footer')
+}
+
+/**
+ * Configure Reinvigorate inception.
+ */
+function dn_reinvigorate_settings() {
+  $form['dn_reinvigorate_code'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Reinvigorate track code'),
+    '#default_value' => variable_get('dn_reinvigorate_code', ''),
   );
+
+  return system_settings_form($form);
 }
