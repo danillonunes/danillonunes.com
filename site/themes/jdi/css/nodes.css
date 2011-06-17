@@ -68,6 +68,16 @@ h2.node-title /* Node title */ {
 .node .content /* Node's content wrapper */ {
 }
 
+.node .field-name-field-image {
+  border: 1px solid #ddd;
+  border-width: 1px 0;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 10px -20px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+}
+
 .node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
   float: right;
 }
