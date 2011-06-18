@@ -349,6 +349,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #222;
+  text-decoration: underline;
 }
 
 a:active {
