@@ -39,7 +39,7 @@ projects[media][version] = 1.0-beta4
 
 projects[media_browser_plus][version] = 1.0-beta2
 
-projects[pathauto][version] = 1.0-beta1
+projects[pathauto][version] = 1.0-rc2
 
 projects[redirect][version] = 1.0-beta3
 
