@@ -62,14 +62,10 @@ projects[views][version] = 3.0-beta3
 
 projects[xmlsitemap][version] = 2.0-beta2
 
-projects[zen][version] = 3.1
-
 ; Contrib themes
 ; ------------
 
-projects[rubik][version] = 4.0-beta5
-
-projects[tao][version] = 3.0-beta3
+projects[zen][version] = 3.1
 
 ; Contrib libraries
 ; ------------
