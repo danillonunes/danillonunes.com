@@ -185,7 +185,8 @@ pre {
 
 hr {
   height: 1px;
-  border: 1px solid #666;
+  border: 1px dashed #aaa;
+  border-width: 1px 0 0;
 }
 
 address {
