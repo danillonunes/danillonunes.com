@@ -9,18 +9,9 @@
 
 
 /*
- * Html
- */
-html {
-  background: url('../images/page-bg-texture.jpg');
-}
-
-
-/*
  * Body
  */
 body {
-  background: url('../images/page-bg.png');
   margin: 0;
   padding: 0;
 }
@@ -55,12 +46,6 @@ body {
 }
 
 #header {
-  background: #111 url('../images/header-bg-texture.png');
-  color: #fff;
-}
-
-#header-inner {
-  background: url('../images/header-bg-light.png') bottom left repeat-x;
 }
 
 #header .section {

@@ -11,6 +11,7 @@
 
 
 body {
+ background: url('../images/page-bg.png');
 }
 
 #page-wrapper {
@@ -20,6 +21,8 @@ body {
 }
 
 #header {
+  background: #333 url('../images/header-bg.png') bottom left repeat-x;
+  color: #fff;
 }
 
 #header .section {

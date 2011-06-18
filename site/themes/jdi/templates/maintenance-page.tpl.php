@@ -26,7 +26,6 @@
 
     <div id="header-wrapper">
     <div id="header">
-    <div id="header-inner">
     <div class="section clearfix">
     <!-- Yeah, I love a lot of markup -->
 
@@ -53,8 +52,7 @@
 
     </div>
     </div>
-    </div>
-    </div><!-- /#header-inner, /.section, /#header, /#header-wrapper -->
+    </div><!-- /.section, /#header, /#header-wrapper -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($navigation) { print ' with-navigation'; } ?>">
 
