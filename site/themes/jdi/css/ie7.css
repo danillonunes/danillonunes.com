@@ -7,6 +7,12 @@
  * sub-theme's .info file for an easy way to use them.
  */
 
+/*
+ * Content
+ */
+#content .section {
+  background-color: #fff;
+}
 
 /*
  * Tabs
