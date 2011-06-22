@@ -35,6 +35,8 @@ projects[globalredirect][version] = 1.3
 
 projects[l10n_update][version] = 1.0-beta2
 
+projects[i18n][version] = 1.0-beta7
+
 projects[media][version] = 1.0-beta4
 
 projects[media_browser_plus][version] = 1.0-beta2
