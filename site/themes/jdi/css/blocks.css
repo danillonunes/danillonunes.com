@@ -71,13 +71,12 @@ h2.block-title /* Block title */ {
 }
 
 .block a.feed-subscribe:before {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   content: ' ';
   display: block;
   height: 200%;
   left: -50%;
-  opacity: 0.1;
   position: absolute;
   top: -140%;
   width: 200%;
