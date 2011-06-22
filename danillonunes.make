@@ -43,6 +43,8 @@ projects[media_browser_plus][version] = 1.0-beta2
 
 projects[pathauto][version] = 1.0-rc2
 
+projects[pathologic][version] = 1.2
+
 projects[redirect][version] = 1.0-beta3
 
 projects[smtp][type] = module
