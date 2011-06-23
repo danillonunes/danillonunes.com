@@ -41,6 +41,8 @@ projects[media][version] = 1.0-beta4
 
 projects[media_browser_plus][version] = 1.0-beta2
 
+projects[openidurl][version] = 1.5
+
 projects[pathauto][version] = 1.0-rc2
 
 projects[pathologic][version] = 1.2
