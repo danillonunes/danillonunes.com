@@ -41,6 +41,10 @@ projects[hidden_captcha][version] = 1.0
 
 projects[i18n][version] = 1.1
 
+projects[l10n_update][version] = 1.0-beta2
+
+projects[less][version] = 2.3
+
 projects[jquery_update][version] = 2.2
 
 projects[l10n_update][version] = 1.0-beta2
