@@ -59,6 +59,10 @@ css[styles.css][name] = Main Styles
 css[styles.css][description] = Your main custom CSS file.
 css[styles.css][options][weight] = 10
 
+css[formalize-colors.less][name] = Formalize Colors
+css[formalize-colors.less][description] = Form elements colors.
+css[formalize-colors.less][options][weight] = 10
+
 ; THEME SETTINGS (DEFAULTS)
 
 settings[alpha_grid] = 'alpha_default'
