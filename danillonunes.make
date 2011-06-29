@@ -33,6 +33,8 @@ projects[features][version] = 1.0-beta2
 
 projects[globalredirect][version] = 1.3
 
+projects[google_analytics][version] = 1.2
+
 projects[l10n_update][version] = 1.0-beta2
 
 projects[i18n][version] = 1.0-beta7
