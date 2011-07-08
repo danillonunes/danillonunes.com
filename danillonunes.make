@@ -39,7 +39,7 @@ projects[l10n_update][version] = 1.0-beta2
 
 projects[i18n][version] = 1.0-beta8
 
-projects[media][version] = 1.0-beta4
+projects[media][version] = 1.0-beta5
 
 projects[media_browser_plus][version] = 1.0-beta2
 
