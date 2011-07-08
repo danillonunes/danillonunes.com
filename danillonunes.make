@@ -29,7 +29,7 @@ projects[disqus][version] = 1.8
 
 projects[environment_indicator][version] = 1.0
 
-projects[features][version] = 1.0-beta2
+projects[features][version] = 1.0-beta3
 
 projects[globalredirect][version] = 1.3
 
