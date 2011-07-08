@@ -68,7 +68,7 @@ projects[transliteration][version] = 3.0-alpha1
 
 projects[variable][version] = 1.0
 
-projects[views][version] = 3.0-beta3
+projects[views][version] = 3.0-rc1
 
 ; projects[wysiwyg][version] = 2.0
 
