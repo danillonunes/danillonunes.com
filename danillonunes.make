@@ -23,7 +23,7 @@ projects[backup_migrate][version] = 2.1
 
 projects[cdn][version] = 2.0-beta1
 
-projects[ctools][version] = 1.0-alpha4
+projects[ctools][version] = 1.0-beta1
 
 projects[disqus][version] = 1.8
 
