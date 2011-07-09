@@ -1,0 +1,62 @@
+
+/**
+ * CPW Title
+ */
+h2.opera-cpw-title {
+  font-family: "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+}
+
+h2.opera-cpw-title a {
+  background: #eee;
+  background: rgba(0, 0, 0, 0.05);
+  background:
+    -moz-linear-gradient(
+      top center,
+      rgba(0, 0, 0, 0)    0%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+  background: -o-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.05)
+    );
+  background:
+    -webkit-gradient(
+      linear, left top, left bottom,
+      color-stop(0, rgba(0, 0, 0, 0)),
+      color-stop(1, rgba(0, 0, 0, 0.05))
+    );
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  display: block;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  padding: 20px 15px;
+
+     -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+h2.opera-cpw-title a:hover {
+  border-color: #666;
+}
+
+h2.opera-cpw-title a:before {
+  background: url('../images/opera-icon.png') left center no-repeat;
+  content: ' ';
+  display: block;
+  float: left;
+  height: 120px;
+  margin: -30px 15px 0 0;
+  width: 110px;
+}
+
+h2.opera-cpw-title a strong {
+  color: #d02626;
+  display: block;
+}
+
+h2.opera-cpw-title a strong small {
+  font-size: 0.5em;
+  vertical-align: top;
+}

@@ -118,6 +118,13 @@ function jdi_preprocess_node(&$variables, $hook) {
   }
 }
 
+function jdi_preprocess_node_page(&$variables, $hook) {
+  $path = drupal_get_path_alias($_GET['q']);
+  if (drupal_match_path($path, 'projetos')) {
+    drupal_add_css(drupal_get_path('theme', 'jdi') . '/css/page-projects.css');
+  }
+}
+
 /**
  * Override or insert variables into the comment templates.
  *
