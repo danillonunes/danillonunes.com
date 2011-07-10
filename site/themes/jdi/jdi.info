@@ -52,6 +52,9 @@ stylesheets[all][]        = css/forms.css
 stylesheets[all][]        = css/fields.css
 stylesheets[print][]      = css/print.css
 
+; Hard-coded base64 logo image
+stylesheets[all][]        = css/logo.css
+
 ; Example of adding handheld stylesheets. The iPhone's preferred media type
 ; is based on the CSS3 Media queries. http://www.w3.org/TR/css3-mediaqueries/
 
