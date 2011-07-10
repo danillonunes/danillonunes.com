@@ -39,9 +39,9 @@ projects[google_analytics][version] = 1.2
 
 projects[hidden_captcha][version] = 1.0
 
-projects[l10n_update][version] = 1.0-beta2
-
 projects[i18n][version] = 1.0-beta8
+
+projects[l10n_update][version] = 1.0-beta2
 
 projects[media][version] = 1.0-beta5
 
