@@ -168,7 +168,9 @@
 
   </div></div><!-- /#main, /#main-wrapper -->
 
-  <?php print render($page['footer']); ?>
+  <div id="footer">
+    <?php print render($page['footer']); ?>
+  </div><!-- /#footer -->
 
 </div></div><!-- /#page, /#page-wrapper -->
 

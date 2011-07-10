@@ -275,6 +275,22 @@ ul.links li {
 /*
  * Footer
  */
+#footer {
+  background: #222;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+  color: #ccc;
+  margin: 3em 0 0;
+  width: 100%;
+
+     -moz-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#footer a {
+  color: #8af;
+}
+
 .region-footer {
   padding: 1em 0;
 }
