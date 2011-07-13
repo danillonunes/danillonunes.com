@@ -67,6 +67,11 @@ input[type="button"] {
     #595959 0%,
     #222  100%
   );
+  background: -o-linear-gradient(
+    top,
+    #595959,
+    #222
+  );
   background: -webkit-gradient(
     linear, left top, left bottom,
     color-stop(0, #595959),
@@ -91,8 +96,21 @@ input[type="reset"]:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   background-color: #000;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #404040), color-stop(1, #000));
-  background: -moz-linear-gradient(top center, #404040 0%, #000 100%);
+  background: -moz-linear-gradient(
+    top center,
+    #404040 0%,
+    #000 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    #404040,
+    #000
+  );
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    color-stop(0, #404040),
+    color-stop(1, #000)
+  );
 }
 
 .form-item /* Wrapper for a form element (or group of form elements) and its label */ {

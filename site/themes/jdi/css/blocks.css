@@ -51,6 +51,13 @@ h2.block-title /* Block title */ {
     );
   background:
     url('../images/feed-icon.png') left center no-repeat,
+    -o-linear-gradient(
+      top,
+      #fb9d3a,
+      #db5e2a
+    );
+  background:
+    url('../images/feed-icon.png') left center no-repeat,
     -webkit-gradient(
       linear, left top, left bottom,
       color-stop(0, #fb9d3a),
