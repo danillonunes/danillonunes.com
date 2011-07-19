@@ -1,0 +1,27 @@
+
+#content .view-display-id-extra_posts {
+  margin-top: -0.5em;
+}
+
+#content .view-display-id-extra_posts .views-row {
+  border-bottom: 1px dashed #ddd;
+  margin: 0 -10px;
+}
+
+#content .view-display-id-extra_posts .views-row-even {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+#content .view-display-id-extra_posts .views-row h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+#content .view-display-id-extra_posts .views-row h2 a {
+  display: block;
+  padding: 15px;
+}
+
+#content .view-display-id-extra_posts .views-row h2 a:hover {
+  color: #24f;
+}
