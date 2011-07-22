@@ -67,6 +67,7 @@ projects[smtp][download][branch] = 7.x-1.x
 projects[styles][version] = 2.0-alpha8
 
 projects[strongarm][version] = 2.0-beta2
+projects[strongarm][patch][] = http://drupal.org/files/issues/strongarm-lang_pref-998070_0.patch
 
 projects[token][version] = 1.0-beta2
 
