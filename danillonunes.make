@@ -25,7 +25,7 @@ projects[captcha][version] = 1.0-alpha3
 
 projects[cdn][version] = 2.0-beta1
 
-projects[ctools][version] = 1.0-beta1
+projects[ctools][version] = 1.0-rc1
 
 projects[disqus][version] = 1.8
 
