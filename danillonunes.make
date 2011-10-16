@@ -80,7 +80,7 @@ projects[views][version] = 3.0-rc1
 
 ; projects[wysiwyg][version] = 2.0
 
-projects[xmlsitemap][version] = 2.0-beta2
+projects[xmlsitemap][version] = 2.0-beta3
 
 ; Contrib themes
 ; ------------
