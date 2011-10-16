@@ -39,7 +39,7 @@ projects[google_analytics][version] = 1.2
 
 projects[hidden_captcha][version] = 1.0
 
-projects[i18n][version] = 1.0-beta8
+projects[i18n][version] = 1.1
 
 projects[jquery_update][version] = 2.2
 
