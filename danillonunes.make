@@ -74,7 +74,7 @@ projects[translation_management][version] = 1.0-beta1
 
 projects[transliteration][version] = 3.0
 
-projects[variable][version] = 1.0
+projects[variable][version] = 1.1
 
 projects[views][version] = 3.0-rc1
 
