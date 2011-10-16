@@ -72,7 +72,7 @@ projects[token][version] = 1.0-beta6
 
 projects[translation_management][version] = 1.0-beta1
 
-projects[transliteration][version] = 3.0-alpha1
+projects[transliteration][version] = 3.0
 
 projects[variable][version] = 1.0
 
