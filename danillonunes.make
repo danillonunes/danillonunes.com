@@ -19,7 +19,7 @@ projects[drupal][version] = 7.8
 ; Contrib modules
 ; ------------
 
-projects[backup_migrate][version] = 2.1
+projects[backup_migrate][version] = 2.2
 
 projects[captcha][version] = 1.0-alpha3
 
