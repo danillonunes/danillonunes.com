@@ -70,7 +70,7 @@ body {
 #logo:after {
   background-position: 0 -78px;
   content: '';
-  display: block;
+  display: none;
   opacity: 0;
   position: absolute;
   left: 0;
@@ -87,6 +87,7 @@ body {
 }
 
 #logo:hover:after {
+  display: block;
   opacity: 1;
 }
 
