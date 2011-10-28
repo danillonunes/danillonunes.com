@@ -4,7 +4,6 @@ CWD=`pwd`
 
 MAKEFILE='danillonunes.make'
 DRUPALPATH='drupal'
-TRANSLATIONS='pt-br'
 
 LOCALSITESPATH='site'
 LOCALFILESPATH='site/files'
@@ -14,7 +13,7 @@ PUBLICFILESPATH='files'
 
 rm -rf $CWD/$DRUPALPATH-tmp
 rm -rf $CWD/$DRUPALPATH-old
-drush make --translations=$TRANSLATIONS $CWD/$MAKEFILE $CWD/$DRUPALPATH-tmp
+drush make $CWD/$MAKEFILE $CWD/$DRUPALPATH-tmp
 if [ "test -d $CWD/$DRUPALPATH-tmp" ]
   then
     mv $CWD/$DRUPALPATH $CWD/$DRUPALPATH-old
