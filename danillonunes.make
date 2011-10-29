@@ -85,6 +85,8 @@ projects[xmlsitemap][version] = 2.0-beta3
 ; Contrib themes
 ; ------------
 
+projects[tao][version] = 3.0-beta4
+
 projects[zen][version] = 3.1
 
 ; Contrib libraries
