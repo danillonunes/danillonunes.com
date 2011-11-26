@@ -53,7 +53,7 @@ projects[mollom][version] = 1.0
 
 projects[openidurl][version] = 1.5
 
-projects[pathauto][version] = 1.0-rc2
+projects[pathauto][version] = 1.0
 
 projects[pathologic][version] = 1.3
 
