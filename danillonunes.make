@@ -55,7 +55,7 @@ projects[openidurl][version] = 1.5
 
 projects[pathauto][version] = 1.0
 
-projects[pathologic][version] = 1.3
+projects[pathologic][version] = 1.4
 
 projects[redirect][version] = 1.0-beta3
 
