@@ -68,7 +68,7 @@ projects[styles][version] = 2.0-alpha8
 
 projects[strongarm][version] = 2.0-beta4
 
-projects[token][version] = 1.0-beta6
+projects[token][version] = 1.0-beta7
 
 projects[translation_management][version] = 1.0-beta1
 
