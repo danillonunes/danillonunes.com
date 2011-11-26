@@ -66,7 +66,7 @@ projects[smtp][download][branch] = 7.x-1.x
 
 projects[styles][version] = 2.0-alpha8
 
-projects[strongarm][version] = 2.0-beta3
+projects[strongarm][version] = 2.0-beta4
 
 projects[token][version] = 1.0-beta6
 
