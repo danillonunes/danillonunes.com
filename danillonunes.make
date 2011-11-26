@@ -29,7 +29,7 @@ projects[ctools][version] = 1.0-rc1
 
 projects[disqus][version] = 1.8
 
-projects[environment_indicator][version] = 1.0
+projects[environment_indicator][version] = 1.1
 
 projects[features][version] = 1.0-beta3
 
