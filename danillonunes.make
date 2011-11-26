@@ -21,7 +21,7 @@ projects[drupal][version] = 7.9
 
 projects[backup_migrate][version] = 2.2
 
-projects[captcha][version] = 1.0-alpha3
+projects[captcha][version] = 1.0-beta1
 
 projects[cdn][version] = 2.0-beta1
 
