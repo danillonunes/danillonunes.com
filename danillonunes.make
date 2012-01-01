@@ -24,6 +24,7 @@ projects[backup_migrate][version] = 2.2
 projects[captcha][version] = 1.0-beta1
 
 projects[cdn][version] = 2.0-beta1
+projects[cdn][patch][] = http://drupal.org/files/use_scheme_correctly.patch
 
 projects[ctools][version] = 1.0-rc1
 
