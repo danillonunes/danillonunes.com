@@ -23,7 +23,7 @@ projects[backup_migrate][version] = 2.2
 
 projects[captcha][version] = 1.0-beta2
 
-projects[cdn][version] = 2.4
+projects[cdn][version] = 2.5
 
 projects[ctools][version] = 1.0
 
