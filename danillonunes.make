@@ -61,6 +61,11 @@ projects[variable][version] = 1.2
 
 projects[views][version] = 3.3
 
+projects[vinculum][type] = module
+projects[vinculum][download][type] = git
+projects[vinculum][download][url] = http://git.drupal.org/project/vinculum.git
+projects[vinculum][download][branch] = 7.x-2.x
+
 projects[xmlsitemap][version] = 2.0-rc1
 
 ; Contrib themes
