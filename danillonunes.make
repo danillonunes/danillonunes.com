@@ -27,13 +27,7 @@ projects[cdn][version] = 2.4
 
 projects[ctools][version] = 1.0
 
-projects[disqus][version] = 1.8
-
 projects[environment_indicator][version] = 1.1
-
-projects[features][version] = 1.0-beta3
-
-projects[globalredirect][version] = 1.3
 
 projects[google_analytics][version] = 1.2
 
@@ -41,15 +35,9 @@ projects[hidden_captcha][version] = 1.0
 
 projects[i18n][version] = 1.1
 
-projects[jquery_update][version] = 2.2
-
 projects[l10n_update][version] = 1.0-beta2
 
 projects[media][version] = 1.0-rc3
-
-projects[media_browser_plus][version] = 1.0-beta2
-
-projects[mollom][version] = 1.0
 
 projects[openidurl][version] = 1.5
 
@@ -70,15 +58,11 @@ projects[strongarm][version] = 2.0-beta4
 
 projects[token][version] = 1.0-beta7
 
-projects[translation_management][version] = 1.0-beta1
-
 projects[transliteration][version] = 3.0
 
 projects[variable][version] = 1.1
 
 projects[views][version] = 3.0-rc3
-
-; projects[wysiwyg][version] = 2.0
 
 projects[xmlsitemap][version] = 2.0-beta3
 
@@ -94,6 +78,3 @@ projects[zen][version] = 3.1
 ; Contrib libraries
 ; ------------
 
-; libraries[ckeditor][download][type] = svn
-; libraries[ckeditor][download][url] = http://svn.ckeditor.com/CKEditor/releases/stable
-; libraries[ckeditor][directory_name] = ckeditor
