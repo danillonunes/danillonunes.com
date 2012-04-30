@@ -51,7 +51,7 @@ projects[smtp][version] = 1.0-beta1
 
 projects[styles][version] = 2.0-alpha8
 
-projects[strongarm][version] = 2.0-beta4
+projects[strongarm][version] = 2.0-rc1
 
 projects[token][version] = 1.0-beta7
 
