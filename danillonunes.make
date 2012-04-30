@@ -35,7 +35,7 @@ projects[hidden_captcha][version] = 1.0
 
 projects[i18n][version] = 1.5
 
-projects[l10n_update][version] = 1.0-beta2
+projects[l10n_update][version] = 1.0-beta3
 
 projects[media][version] = 1.0-rc3
 
