@@ -61,7 +61,7 @@ projects[variable][version] = 1.2
 
 projects[views][version] = 3.3
 
-projects[xmlsitemap][version] = 2.0-beta3
+projects[xmlsitemap][version] = 2.0-rc1
 
 ; Contrib themes
 ; ------------
