@@ -57,7 +57,7 @@ projects[token][version] = 1.0
 
 projects[transliteration][version] = 3.0
 
-projects[variable][version] = 1.1
+projects[variable][version] = 1.2
 
 projects[views][version] = 3.0-rc3
 
