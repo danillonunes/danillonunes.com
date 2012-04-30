@@ -47,10 +47,7 @@ projects[pathologic][version] = 1.4
 
 projects[redirect][version] = 1.0-beta4
 
-projects[smtp][type] = module
-projects[smtp][download][type] = git
-projects[smtp][download][url] = http://git.drupal.org/project/smtp.git
-projects[smtp][download][branch] = 7.x-1.x
+projects[smtp][version] = 1.0-beta1
 
 projects[styles][version] = 2.0-alpha8
 
