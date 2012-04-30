@@ -33,7 +33,7 @@ projects[google_analytics][version] = 1.2
 
 projects[hidden_captcha][version] = 1.0
 
-projects[i18n][version] = 1.1
+projects[i18n][version] = 1.5
 
 projects[l10n_update][version] = 1.0-beta2
 
