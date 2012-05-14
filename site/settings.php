@@ -16,6 +16,7 @@ $environment = get_environment();
  * List of additional settings files to be included.
  */
 $settings_files = array(
+  'common',
   $environment,
   'secret'
 );
