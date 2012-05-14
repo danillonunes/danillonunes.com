@@ -14,9 +14,6 @@ regions[content] = Content
 
 ; ADDITIONAL REGIONS
 
-regions[user_first] = User Bar First
-regions[user_second] = User Bar Second
-
 regions[branding] = Branding
 regions[menu] = Menu
 
@@ -242,22 +239,6 @@ settings[alpha_region_dashboard_main_columns] = '1'
 settings[alpha_region_dashboard_main_suffix] = ''
 settings[alpha_region_dashboard_main_weight] = '-50'
 settings[alpha_region_dashboard_main_css] = ''
-settings[alpha_region_user_first_equal_height] = ''
-settings[alpha_region_user_first_force] = ''
-settings[alpha_region_user_first_zone] = 'user'
-settings[alpha_region_user_first_prefix] = ''
-settings[alpha_region_user_first_columns] = '8'
-settings[alpha_region_user_first_suffix] = ''
-settings[alpha_region_user_first_weight] = '1'
-settings[alpha_region_user_first_css] = ''
-settings[alpha_region_user_second_equal_height] = ''
-settings[alpha_region_user_second_force] = ''
-settings[alpha_region_user_second_zone] = 'user'
-settings[alpha_region_user_second_prefix] = ''
-settings[alpha_region_user_second_columns] = '4'
-settings[alpha_region_user_second_suffix] = ''
-settings[alpha_region_user_second_weight] = '2'
-settings[alpha_region_user_second_css] = ''
 settings[alpha_region_branding_equal_height] = ''
 settings[alpha_region_branding_force] = '1'
 settings[alpha_region_branding_zone] = 'branding'
