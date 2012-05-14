@@ -18,3 +18,10 @@ switch ($_SERVER['HTTP_HOST']) {
  * Reinvigorate variable.
  */
 $conf['reinvigorate_account'] = 'b7dpl-4y3vm2858r';
+
+/**
+ * Enable CDN.
+ */
+if (defined('CDN_ENABLED')) {
+  $conf['cdn_status'] = CDN_ENABLED;
+}
