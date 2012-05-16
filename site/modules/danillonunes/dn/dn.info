@@ -1,0 +1,13 @@
+name = danillonunes
+description = Main danillonunes feature holds general site stuff.
+core = 7.x
+package = danillonunes
+version = 7.x-1.0
+project = dn
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = sitewide
+features[context][] = sitewide_anonymous
+features[context][] = sitewide_authenticated
+features[ctools][] = context:context:3
+features[features_api][] = api:1
