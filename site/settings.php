@@ -51,5 +51,9 @@ function get_environment() {
       break;
   }
 
+  if (strpos($_SERVER["SCRIPT_FILENAME"], 'drush.php')) {
+    $environment = 'drush';
+  }
+
   return $environment;
 }
