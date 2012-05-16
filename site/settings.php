@@ -36,7 +36,7 @@ foreach ($settings_files as $settings_file) {
  *   String with the detected environment.
  */
 function get_environment() {
-  $environment = 'unknown';
+  $environment = '';
 
   switch ($_SERVER["SERVER_ADDR"]) {
     case '127.0.0.1':
