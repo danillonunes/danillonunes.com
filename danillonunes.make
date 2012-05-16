@@ -53,6 +53,11 @@ projects[pathologic][version] = 1.4
 
 projects[redirect][version] = 1.0-beta4
 
+projects[reinvigorate][type] = module
+projects[reinvigorate][download][type] = git
+projects[reinvigorate][download][url] = http://git.drupal.org/sandbox/danillonunes/1555158.git
+projects[reinvigorate][download][branch] = 7.x-1.0-alpha2
+
 projects[smtp][version] = 1.0-beta1
 
 projects[styles][version] = 2.0-alpha8
