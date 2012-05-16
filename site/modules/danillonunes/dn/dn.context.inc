@@ -86,5 +86,59 @@ function dn_context_default_contexts() {
   t('sitewide');
   $export['sitewide_authenticated'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'sitewide_en';
+  $context->description = 'Context enabled for all English site pages.';
+  $context->tag = 'sitewide';
+  $context->conditions = array(
+    'language' => array(
+      'values' => array(
+        'en' => 'en',
+      ),
+    ),
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Context enabled for all English site pages.');
+  t('sitewide');
+  $export['sitewide_en'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'sitewide_pt_br';
+  $context->description = 'Context enabled for all Portuguese site pages.';
+  $context->tag = 'sitewide';
+  $context->conditions = array(
+    'language' => array(
+      'values' => array(
+        'pt-br' => 'pt-br',
+      ),
+    ),
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Context enabled for all Portuguese site pages.');
+  t('sitewide');
+  $export['sitewide_pt_br'] = $context;
+
   return $export;
 }
