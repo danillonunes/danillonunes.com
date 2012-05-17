@@ -1,4 +1,15 @@
 <?php
+/**
+ * Only include settings files that exists in the settings directory.
+ *
+ * Leaving this as FALSE and I wont't check if every setting file exists, to
+ * avoid performance and i/o concerns.
+ *
+ * Please note that this can generate errors if I attempt to include a
+ * inexistent file. Make sure all your settings files can be found on the
+ * settings directory, even if they are empty.
+ */
+define('SETTINGS_SAFE_INCLUDES', FALSE);
 
 /**
  * Settings directory.
@@ -27,7 +38,12 @@ $settings_files['secret'] = 'secret';
  */
 foreach ($settings_files as $settings_file) {
   $settings_file_path = $settings_dir . '/' . $settings_file . '.settings.php';
-  include_once $settings_file_path;
+  if (SETTINGS_SAFE_INCLUDES && file_exists($settings_file_path)) {
+    require_once $settings_file_path;
+  }
+  else if (!SETTINGS_SAFE_INCLUDES) {
+    require_once $settings_file_path;
+  }
 }
 
 /**
