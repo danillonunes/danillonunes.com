@@ -1,0 +1,7 @@
+name = About
+description = Generate translatable about block to be used under the site.
+core = 7.x
+package = danillonunes
+version = 7.x-1.0
+project = dn_about
+dependencies[] = variable

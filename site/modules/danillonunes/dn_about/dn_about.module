@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Code for the About module.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter() for system_site_information_settings.
+ */
+function dn_about_form_system_site_information_settings_alter(&$form, $form_state) {
+  $form['about'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('About'),
+  );
+
+  $form['about']['about_title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('About title'),
+    '#default_value' => variable_get_value('about_title'),
+  );
+
+  $form['about']['about_text'] = array(
+    '#type' => 'textarea',
+    '#title' => t('About text'),
+    '#default_value' => variable_get_value('about_text'),
+  );
+}
