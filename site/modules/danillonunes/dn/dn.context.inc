@@ -32,6 +32,12 @@ function dn_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
+        'dn_about-about' => array(
+          'module' => 'dn_about',
+          'delta' => 'about',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
         'locale-language' => array(
           'module' => 'locale',
           'delta' => 'language',
