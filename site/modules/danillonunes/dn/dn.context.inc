@@ -23,7 +23,36 @@ function dn_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'locale-language' => array(
+          'module' => 'locale',
+          'delta' => 'language',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'system-main' => array(
+          'module' => 'system',
+          'delta' => 'main',
+          'region' => 'content',
+          'weight' => '0',
+        ),
+        'system-powered-by' => array(
+          'module' => 'system',
+          'delta' => 'powered-by',
+          'region' => 'footer',
+          'weight' => '0',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
