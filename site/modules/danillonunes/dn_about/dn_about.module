@@ -5,6 +5,36 @@
  */
 
 /**
+ * Implements hook_block_info().
+ */
+function dn_about_block_info() {
+  $blocks = array();
+
+  $blocks['about'] = array(
+    'info' => t('About'),
+    'cache' => DRUPAL_CACHE_PER_PAGE
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function dn_about_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'about':
+      module_load_include('inc', 'dn_about', 'includes/dn_about.blocks');
+      $block = dn_about_block_view_about();
+      break;
+  }
+
+  return $block;
+}
+
+/**
  * Implements hook_form_FORM_ID_alter() for system_site_information_settings.
  */
 function dn_about_form_system_site_information_settings_alter(&$form, $form_state) {
