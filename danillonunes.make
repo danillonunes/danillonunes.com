@@ -19,7 +19,7 @@ projects[drupal][version] = 7.14
 ; Contrib modules
 ; ------------
 
-projects[backup_migrate][version] = 2.2
+projects[backup_migrate][version] = 2.3
 
 projects[captcha][version] = 1.0-beta2
 
