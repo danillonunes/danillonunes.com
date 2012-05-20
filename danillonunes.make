@@ -57,6 +57,8 @@ projects[pathologic][version] = 1.4
 
 projects[redirect][version] = 1.0-beta4
 
+projects[respondjs][version] = 1.1
+
 projects[smtp][version] = 1.0-beta1
 
 projects[styles][version] = 2.0-alpha8
