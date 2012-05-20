@@ -97,3 +97,7 @@ projects[zen][version] = 3.1
 libraries[modernizr][download][type] = file
 libraries[modernizr][download][url] = http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js
 libraries[modernizr][download][md5] = 315ea433abb47b0872e116ce65b09a73
+
+libraries[respondjs][download][type] = git
+libraries[respondjs][download][url] = https://github.com/scottjehl/Respond.git
+libraries[respondjs][download][branch] = 1.2.0
