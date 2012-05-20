@@ -7,3 +7,24 @@
   float: none;
   margin: @base-margin;
 }
+
+/**
+ * Logo.
+ */
+.logo-img a {
+  background: url('../images/logo-sprite.png') top left no-repeat;
+  background-size: 100%;
+  display: block;
+  margin: 0;
+  max-width: 392px;
+  padding: 0;
+
+  &:hover,
+  &:active {
+    background-position: bottom left;
+  }
+}
+
+.logo-img img {
+  visibility: hidden;
+}
