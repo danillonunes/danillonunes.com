@@ -92,3 +92,6 @@ projects[zen][version] = 3.1
 ; Contrib libraries
 ; ------------
 
+libraries[modernizr][download][type] = file
+libraries[modernizr][download][url] = http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js
+libraries[modernizr][download][md5] = 315ea433abb47b0872e116ce65b09a73
