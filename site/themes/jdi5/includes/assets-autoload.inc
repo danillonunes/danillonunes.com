@@ -40,6 +40,13 @@ function assets_autoload($variables, $hook) {
         )
       );
 
+      $js_suggestions[$filename] = array(
+        'data' => $filename,
+        'options' => array(
+          'group' => 4000
+        )
+      );
+
       foreach ($layouts as $layout) {
         $grid_sanitized = $grid['sanitized'];
         $layout_sanitized = $layout['sanitized'];
@@ -84,6 +91,14 @@ function assets_autoload($variables, $hook) {
       if ($file = alpha_find_stylesheet($css_path, $filename)) {
         $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
         drupal_add_css($file, $options);
+      }
+    }
+
+    foreach ($js_suggestions as $filename => $js_suggestion) {
+      $file = drupal_get_path('theme', $theme_name) . '/js/' . $filename . '.js';
+      $options = !empty($js_suggestion['options']) ? $js_suggestion['options'] : NULL;
+      if (file_exists($file)) {
+        drupal_add_js($file, $options);
       }
     }
   }
