@@ -55,6 +55,8 @@ projects[pathauto][version] = 1.0
 
 projects[pathologic][version] = 1.4
 
+projects[prefixfree][version] = 1.0-alpha1
+
 projects[redirect][version] = 1.0-beta4
 
 projects[respondjs][version] = 1.1
