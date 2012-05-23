@@ -100,6 +100,10 @@ libraries[modernizr][download][type] = file
 libraries[modernizr][download][url] = http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js
 libraries[modernizr][download][md5] = 315ea433abb47b0872e116ce65b09a73
 
+libraries[prefixfree][download][type] = git
+libraries[prefixfree][download][url] = https://github.com/LeaVerou/prefixfree.git
+libraries[prefixfree][download][branch] = e4a34d823eb6978a62f353fc4240132e1397e3b6
+
 libraries[respondjs][download][type] = git
 libraries[respondjs][download][url] = https://github.com/scottjehl/Respond.git
 libraries[respondjs][download][branch] = 1.2.0
