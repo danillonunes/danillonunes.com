@@ -27,7 +27,8 @@ function jdi5_css_alter(&$css) {
   foreach ($css as $key => $value) {
     if (preg_match('/^ie::(\S*)/', $key)) {
       unset($css[$key]);
-    } else {
+    }
+    else {
       $css[$key]['browsers']['IE'] = TRUE;
     }
   }
