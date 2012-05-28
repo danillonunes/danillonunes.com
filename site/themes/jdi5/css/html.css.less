@@ -1,10 +1,28 @@
+@import "variables.css.less";
+
+a:link,
+a:visited {
+  color: @a-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: @a-visited-color;
+}
+
+a:focus,
+a:hover {
+  color: @a-hover-color;
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
 
   &,
   a:link,
   a:visited {
-    color: #3C3C3C;
+    color: @hn-a-color;
     text-decoration: none;
   }
 }
