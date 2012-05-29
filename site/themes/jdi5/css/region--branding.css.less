@@ -10,20 +10,23 @@
  */
 .region-branding .logo-img {
   float: none;
-  margin: @base-margin 0;
+  margin: @base-margin @base-margin / 2;
 }
 
 /**
  * Logo.
  */
-.logo-img a {
-  margin: 0 auto;
-  max-width: @logo-display-width;
-}
-
 .logo-img {
   background-color: #ebebeb;
   border-radius: @base-radius;
+  height: @logo-display-height;
+  width: @logo-display-width;
+}
+
+.logo-img a {
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .backgroundsize
