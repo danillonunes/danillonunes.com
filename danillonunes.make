@@ -96,6 +96,10 @@ projects[zen][version] = 3.1
 ; Contrib libraries
 ; ------------
 
+libraries[lessphp][download][type] = file
+libraries[lessphp][download][url] = http://leafo.net/lessphp/src/lessphp-0.3.4-2.tar.gz
+libraries[lessphp][download][md5] = 4d54697564df5aeeeeeebb906a5f7f72
+
 libraries[modernizr][download][type] = file
 libraries[modernizr][download][url] = http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js
 libraries[modernizr][download][md5] = 315ea433abb47b0872e116ce65b09a73
