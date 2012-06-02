@@ -8,3 +8,57 @@
   margin-bottom: @base-margin;
   text-shadow: 1px 1px #fff;
 }
+
+.block a.feed-subscribe {
+  background: #fb9d3a url('../images/feed-icon.png') left center no-repeat;
+  background:
+    url('../images/feed-icon.png') left center no-repeat,
+    -moz-linear-gradient(
+      top center,
+      #fb9d3a 0%,
+      #db5e2a  100%
+    );
+  background:
+    url('../images/feed-icon.png') left center no-repeat,
+    -o-linear-gradient(
+      top,
+      #fb9d3a,
+      #db5e2a
+    );
+  background:
+    url('../images/feed-icon.png') left center no-repeat,
+    -webkit-gradient(
+      linear, left top, left bottom,
+      color-stop(0, #fb9d3a),
+      color-stop(1, #db5e2a)
+    );
+  border: 2px solid #f69d51;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  padding: 5px 15px 5px 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.block a.feed-subscribe:before {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  content: ' ';
+  display: block;
+  height: 200%;
+  left: -50%;
+  position: absolute;
+  top: -140%;
+  width: 200%;
+}
+
+.block a.feed-subscribe:hover {
+  background: #fb9d3a url('../images/feed-icon.png') left center no-repeat;
+  text-decoration: none;
+}
