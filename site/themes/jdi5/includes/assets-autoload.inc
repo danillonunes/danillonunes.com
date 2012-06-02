@@ -19,72 +19,70 @@
  * @see alpha_find_stylesheet().
  */
 function assets_autoload($variables, $hook) {
-  if (is_array($variables) && !empty($variables['theme_hook_suggestions'])) {
-    $theme = alpha_get_theme();
-    $theme_name = $theme->theme;
-    $theme_hooks = array_merge(array($hook), $variables['theme_hook_suggestions']);
+  $theme = alpha_get_theme();
+  $theme_name = $theme->theme;
+  $theme_hooks = array_merge(array($hook), $variables['theme_hook_suggestions']);
 
-    $grid_name = alpha_theme_get_setting('alpha_grid', 'alpha_default', $theme_name);
-    $grids = alpha_retrieve_grids($theme_name);
-    $grid = $grids[$grid_name];
-    $layouts = $grid['layouts'];
+  $grid_name = alpha_theme_get_setting('alpha_grid', 'alpha_default', $theme_name);
+  $grids = alpha_retrieve_grids($theme_name);
+  $grid = $grids[$grid_name];
+  $layouts = $grid['layouts'];
 
-    $css_suggestions = array();
-    foreach ($theme_hooks as $theme_hook) {
-      $filename = str_replace('_', '-', $theme_hook);
+  $css_suggestions = array();
+  foreach ($theme_hooks as $theme_hook) {
+    $filename = str_replace('_', '-', $theme_hook);
 
-      $css_suggestions[$filename] = array(
-        'data' => $filename,
+    $css_suggestions[$filename] = array(
+      'data' => $filename,
+      'options' => array(
+        'group' => 4000
+      )
+    );
+
+    foreach ($layouts as $layout) {
+      $grid_sanitized = $grid['sanitized'];
+      $layout_sanitized = $layout['sanitized'];
+      $filename_layout_array = array($filename, "$grid_sanitized");
+      $filename_layout = implode('--', $filename_layout_array);
+
+      $css_suggestions[$filename_layout] = array(
+        'data' => $filename_layout,
         'options' => array(
-          'group' => 4000
+          'group' => 5000,
+          'media' => $layout['media'],
+          'browsers' => array('IE' => 'gte IE 9', '!IE' => TRUE),
+          'weight' => $layout['weight'],
+          'preprocess_media' => TRUE
         )
       );
 
-      foreach ($layouts as $layout) {
-        $grid_sanitized = $grid['sanitized'];
-        $layout_sanitized = $layout['sanitized'];
-        $filename_layout_array = array($filename, "$grid_sanitized");
-        $filename_layout = implode('--', $filename_layout_array);
+      $filename_layout_array = array($filename, "$grid_sanitized-$layout_sanitized");
+      $filename_layout = implode('--', $filename_layout_array);
 
-        $css_suggestions[$filename_layout] = array(
-          'data' => $filename_layout,
-          'options' => array(
-            'group' => 5000,
-            'media' => $layout['media'],
-            'browsers' => array('IE' => 'gte IE 9', '!IE' => TRUE),
-            'weight' => $layout['weight'],
-            'preprocess_media' => TRUE
-          )
-        );
-
-        $filename_layout_array = array($filename, "$grid_sanitized-$layout_sanitized");
-        $filename_layout = implode('--', $filename_layout_array);
-
-        /**
-         * Generate a CSS suggestion that will be added if the CSS file exists.
-         * Most of those parameters are copied from Alpha.
-         *
-         * @see alpha_grid_css().
-         */
-        $css_suggestions[$filename_layout] = array(
-          'data' => $filename_layout,
-          'options' => array(
-            'group' => 5000,
-            'media' => $layout['media'],
-            'browsers' => array('IE' => 'gte IE 9', '!IE' => TRUE),
-            'weight' => $layout['weight'],
-            'preprocess_media' => TRUE
-          )
-        );
-      }
+      /**
+       * Generate a CSS suggestion that will be added if the CSS file exists.
+       * Most of those parameters are copied from Alpha.
+       *
+       * @see alpha_grid_css().
+       */
+      $css_suggestions[$filename_layout] = array(
+        'data' => $filename_layout,
+        'options' => array(
+          'group' => 5000,
+          'media' => $layout['media'],
+          'browsers' => array('IE' => 'gte IE 9', '!IE' => TRUE),
+          'weight' => $layout['weight'],
+          'preprocess_media' => TRUE
+        )
+      );
     }
+  }
 
-    $css_path = drupal_get_path('theme', $theme_name) . '/css';
-    foreach ($css_suggestions as $filename => $css_suggestion) {
-      if ($file = alpha_find_stylesheet($css_path, $filename)) {
-        $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
-        drupal_add_css($file, $options);
-      }
+  $css_path = drupal_get_path('theme', $theme_name) . '/css';
+  foreach ($css_suggestions as $filename => $css_suggestion) {
+    if ($file = alpha_find_stylesheet($css_path, $filename)) {
+      $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
+      drupal_add_css($file, $options);
     }
   }
 }
