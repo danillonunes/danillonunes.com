@@ -44,3 +44,28 @@
     background: -moz-linear-gradient(top center, #404040 0%, #000 100%);
   }
 }
+
+.alternated-list() {
+  & > li:first-child,
+  & > .view-content > .views-row-first {
+    border-top: 1px dashed #ddd;
+  }
+
+  & > li,
+  & > .view-content > .views-row {
+    border-bottom: 1px dashed #ddd;
+  }
+
+  & > li:last-child,
+  & > .view-content > .views-row-last {
+  }
+
+  & > li:nth-child(odd),
+  & > .view-content > .views-row-odd {
+  }
+
+  & > li:nth-child(even),
+  & > .view-content > .views-row-even {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+}
