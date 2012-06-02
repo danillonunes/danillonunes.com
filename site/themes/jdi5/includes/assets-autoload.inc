@@ -21,7 +21,7 @@
 function assets_autoload($variables, $hook) {
   $theme = alpha_get_theme();
   $theme_name = $theme->theme;
-  $theme_hooks = array_merge(array($hook), $variables['theme_hook_suggestions']);
+  $theme_hooks = assets_autoload_get_theme_hooks($variables, $hook);
 
   $grid_name = alpha_theme_get_setting('alpha_grid', 'alpha_default', $theme_name);
   $grids = alpha_retrieve_grids($theme_name);
@@ -85,4 +85,32 @@ function assets_autoload($variables, $hook) {
       drupal_add_css($file, $options);
     }
   }
+}
+
+/**
+ * Get theme hooks.
+ */
+function assets_autoload_get_theme_hooks($variables, $hook = '') {
+  $hooks = array($hook);
+
+  if (isset($variables['theme_hook_suggestions'])) {
+    $hooks = array_merge($hooks, $variables['theme_hook_suggestions']);
+  }
+
+  /**
+   * Add special hooks for views rendering.
+   */
+  if (strpos($hook, 'view') === 0 && isset($variables['view']) && is_object($variables['view'])) {
+    $view = $variables['view'];
+    $display = NULL;
+    if ($view->current_display) {
+      $display = $view->display[$view->current_display];
+    }
+
+    ctools_include('theme', 'views', 'theme');
+    $views_hooks = array_reverse(_views_theme_functions($hook, $view, $display));
+    $hooks = array_merge($hooks, $views_hooks);
+  }
+
+  return array_unique($hooks);
 }
