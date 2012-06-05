@@ -100,8 +100,6 @@ projects[tao][version] = 3.0-beta4
 
 projects[omega][version] = 3.1
 
-projects[zen][version] = 3.1
-
 ; Contrib libraries
 ; ------------
 
