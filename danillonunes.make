@@ -78,7 +78,7 @@ projects[strongarm][version] = 2.0-rc1
 
 projects[token][version] = 1.1
 
-projects[transliteration][version] = 3.0
+projects[transliteration][version] = 3.1
 
 projects[variable][version] = 1.2
 
