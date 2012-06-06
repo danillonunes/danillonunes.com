@@ -19,6 +19,8 @@ projects[drupal][version] = 7.14
 ; Contrib modules
 ; ------------
 
+projects[admin_menu][version] = 3.0-rc3
+
 projects[backup_migrate][version] = 2.4
 
 projects[captcha][version] = 1.0-beta2
