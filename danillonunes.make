@@ -29,7 +29,7 @@ projects[context][version] = 3.0-beta3
 
 projects[ctools][version] = 1.0
 
-projects[entity][version] = 1.0-rc2
+projects[entity][version] = 1.0-rc3
 
 projects[environment_indicator][version] = 1.1
 
