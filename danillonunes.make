@@ -25,7 +25,7 @@ projects[captcha][version] = 1.0-beta2
 
 projects[cdn][version] = 2.5
 
-projects[context][version] = 3.0-beta2
+projects[context][version] = 3.0-beta3
 
 projects[ctools][version] = 1.0
 
