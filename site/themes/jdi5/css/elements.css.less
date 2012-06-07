@@ -1,3 +1,5 @@
+@import "properties.css.less";
+
 .base-font() {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
@@ -10,6 +12,7 @@
   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25);
   color: #666;
   max-width: 100%;
+  .transition(box-shadow, 0.5s);
 
   &:focus {
     background-color: #fff;
@@ -17,6 +20,7 @@
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25), 0 0 5px rgba(34, 68, 255, 1);
     color: #222;
     outline: 0;
+    .transition(box-shadow, 0.1s);
   }
 }
 
