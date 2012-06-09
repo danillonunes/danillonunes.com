@@ -1,6 +1,0 @@
-[submodule "site/themes/jdi/formalize"]
-	path = site/themes/jdi/formalize
-	url = https://github.com/nathansmith/formalize.git
-[submodule "site/themes/jdi/modernizr"]
-	path = site/themes/jdi/modernizr
-	url = https://github.com/Modernizr/Modernizr.git
