@@ -50,3 +50,63 @@
 .secondary-menu a:hover {
   color: #fff;
 }
+
+.responsive-layout-narrow,
+.responsive-layout-normal,
+.responsive-layout-wide {
+  .region-menu .region-menu-inner,
+  .region-menu .navigation,
+  .region-menu .main-menu {
+    display: block;
+    height: 100%;
+  }
+
+  .navigation {
+    position: relative;
+  }
+
+  .main-menu {
+    float: right;
+    margin: 0;
+  }
+
+  .main-menu li {
+    display: table;
+    height: 100%;
+    width: auto;
+  }
+
+  .main-menu a:link,
+  .main-menu a:visited {
+    display: table-cell;
+    height: 100%;
+    padding: 0 @base-margin * 2;
+    vertical-align: middle;
+  }
+
+  .secondary-menu {
+    background-color: #444;
+    border-radius: 0 0 @base-radius @base-radius;
+    bottom: -2em;
+    display: block;
+    height: 2em;
+    margin: 0;
+    opacity: 0.75;
+    padding: 0 @base-margin / 2;
+    position: absolute;
+    right: @base-margin;
+    z-index: 10;
+  }
+
+  .secondary-menu:hover {
+    opacity: 1;
+  }
+
+  .secondary-menu li {
+    margin: 0 @base-margin / 2;
+  }
+
+  .secondary-menu a {
+    line-height: 1.75em;
+  }
+}
