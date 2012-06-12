@@ -58,6 +58,20 @@
   }
 }
 
+.field-value-comma() {
+  .field-label::after {
+    content: ' ';
+  }
+
+  .field-item::before {
+    content: ', ';
+  }
+
+  .field-item:first-child::before {
+    content: '';
+  }
+}
+
 .alternated-list() {
   & > li:first-child,
   & > .view-content > .views-row-first {
