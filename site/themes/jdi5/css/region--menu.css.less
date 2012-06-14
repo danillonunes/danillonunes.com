@@ -1,4 +1,3 @@
-@import "elements.css.less";
 @import "variables.css.less";
 
 .main-menu {
@@ -38,20 +37,6 @@
   text-shadow: 0 0 25px #fff;
 }
 
-.block-locale-language {
-  text-align: right;
-}
-
-.block-locale-language a:link,
-.block-locale-language a:visited {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.block-locale-language a:hover {
-  color: #fff;
-}
-
 .responsive-layout-narrow,
 .responsive-layout-normal,
 .responsive-layout-wide {
@@ -83,41 +68,5 @@
     height: 100%;
     padding: 0 @base-margin / 2;
     vertical-align: middle;
-  }
-
-  .block-locale-language {
-    background-color: #444;
-    border-radius: 0 0 @base-radius @base-radius;
-    bottom: -2em;
-    display: block;
-    height: 2em;
-    margin: 0;
-    opacity: 0.75;
-    padding: 0 @base-margin / 2;
-    position: absolute;
-    right: @base-margin;
-    z-index: 10;
-  }
-
-  .block-locale-language:hover {
-    opacity: 1;
-  }
-
-  .block-locale-language .block-title {
-    .element-invisible();
-  }
-
-  .block-locale-language li {
-    display: inline;
-    margin: 0 @base-margin / 2;
-    padding: 0;
-  }
-
-  .block-locale-language li.active {
-    .element-invisible();
-  }
-
-  .block-locale-language a {
-    line-height: 1.75em;
   }
 }
