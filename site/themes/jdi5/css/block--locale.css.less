@@ -1,4 +1,5 @@
 @import "elements.css.less";
+@import "properties.css.less";
 @import "variables.css.less";
 
 .block-locale-language {
@@ -11,11 +12,11 @@
 }
 
 .block-locale-language .en a {
-  background-position: -4px -15px;
+  background-position: 0 -15px;
 }
 
 .block-locale-language .pt-br a {
-  background-position: -4px -63px;
+  background-position: 0 -63px;
 }
 
 .block-locale-language a:link,
@@ -38,10 +39,11 @@
     display: block;
     height: 2em;
     margin: 0;
-    opacity: 0.75;
-    padding: 0 @base-margin / 2;
+    opacity: 0.6;
+    padding: 0;
     position: absolute;
     right: @base-margin;
+    .transition(opacity, 0.25s);
     z-index: 10;
   }
 
@@ -51,6 +53,10 @@
 
   .block-locale-language .block-title {
     .element-invisible();
+  }
+
+  .block-locale-language ul {
+    margin: 0;
   }
 
   .block-locale-language li {
@@ -65,5 +71,6 @@
 
   .block-locale-language a {
     line-height: 1.75em;
+    padding: 0 (@base-margin / 2) (@base-margin / 2) (@base-margin / 2) + 24px;
   }
 }
