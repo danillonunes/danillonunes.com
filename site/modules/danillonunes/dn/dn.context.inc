@@ -38,24 +38,6 @@ function dn_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-9',
         ),
-        'locale-language' => array(
-          'module' => 'locale',
-          'delta' => 'language',
-          'region' => 'sidebar_second',
-          'weight' => '-8',
-        ),
-        'system-main' => array(
-          'module' => 'system',
-          'delta' => 'main',
-          'region' => 'content',
-          'weight' => '0',
-        ),
-        'system-powered-by' => array(
-          'module' => 'system',
-          'delta' => 'powered-by',
-          'region' => 'footer',
-          'weight' => '0',
-        ),
       ),
     ),
   );
