@@ -1,8 +1,8 @@
 @import "variables.css.less";
 
 .main-menu {
-  font-weight: bold;
-  margin: @base-margin 0;
+  font-size: 90%;
+  margin: @base-margin 0.5%;
   text-align: center;
   text-transform: lowercase;
 }
@@ -10,7 +10,7 @@
 .main-menu li {
   float: left;
   margin: 0;
-  width: 50%;
+  width: 33%;
 }
 
 .main-menu a:link,
@@ -62,6 +62,14 @@
     height: 100%;
     padding: 0 @base-margin / 2;
     vertical-align: middle;
+  }
+}
+
+.responsive-layout-normal,
+.responsive-layout-wide {
+  .main-menu {
+    font-size: 100%;
+    font-weight: bold;
   }
 }
 
