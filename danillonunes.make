@@ -127,3 +127,8 @@ libraries[prefixfree][download][branch] = e4a34d823eb6978a62f353fc4240132e1397e3
 libraries[respondjs][download][type] = git
 libraries[respondjs][download][url] = https://github.com/scottjehl/Respond.git
 libraries[respondjs][download][branch] = 1.2.0
+
+libraries[twitter_bootstrap][download][type] = git
+libraries[twitter_bootstrap][download][url] = https://github.com/twitter/bootstrap.git
+libraries[twitter_bootstrap][download][branch] = v2.0.4
+libraries[twitter_bootstrap][destination] = "themes/omega_bootstrap"
