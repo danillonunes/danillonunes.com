@@ -104,6 +104,11 @@ projects[tao][version] = 3.0-beta4
 
 projects[omega][version] = 3.1
 
+projects[omega_bootstrap][type] = theme
+projects[omega_bootstrap][download][type] = git
+projects[omega_bootstrap][download][url] = http://git.drupal.org/sandbox/rerooting/1429486.git
+projects[omega_bootstrap][download][branch] = 2100c73055cc054945cb57ac52f43f20d524396f
+
 ; Contrib libraries
 ; ------------
 
