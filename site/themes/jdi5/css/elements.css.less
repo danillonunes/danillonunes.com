@@ -1,4 +1,5 @@
 @import "properties.css.less";
+@import "variables.css.less";
 
 .base-font() {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -65,12 +66,10 @@
 }
 
 .field-value-comma() {
-  .field-label::after {
-    content: ' ';
-  }
-
   .field-item::before {
-    content: ', ';
+    content: ',';
+    display: inline-block;
+    margin-right: @base-margin / 2;
   }
 
   .field-item:first-child::before {
