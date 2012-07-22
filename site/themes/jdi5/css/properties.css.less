@@ -1,3 +1,64 @@
+@import "variables.css.less";
+
+.border-radius(@radius: @base-radius) {
+  .border-radius(@radius, @radius, @radius, @radius);
+}
+
+.border-radius(@top-left: @base-radius, @top-right: @base-radius, @bottom-right: @base-radius, @bottom-left: @base-radius) {
+  .border-radius-top-left(@top-left);
+  .border-radius-top-right(@top-right);
+  .border-radius-bottom-left(@bottom-left);
+  .border-radius-bottom-right(@bottom-right);
+}
+
+.border-radius-top(@radius: @base-radius) {
+  .border-radius-top-left(@radius);
+  .border-radius-top-right(@radius);
+}
+
+.border-radius-left(@radius: @base-radius) {
+  .border-radius-top-left(@radius);
+  .border-radius-bottom-left(@radius);
+}
+
+.border-radius-bottom(@radius: @base-radius) {
+  .border-radius-bottom-left(@radius);
+  .border-radius-bottom-right(@radius);
+}
+
+.border-radius-right(@radius: @base-radius) {
+  .border-radius-top-right(@radius);
+  .border-radius-bottom-right(@radius);
+}
+
+.border-radius-top-left(@radius: @base-radius) {
+      -moz-border-radius-topleft: @radius;
+      -ms-border-top-left-radius: @radius;
+  -webkit-border-top-left-radius: @radius;
+          border-top-left-radius: @radius;
+}
+
+.border-radius-top-right(@radius: @base-radius) {
+      -moz-border-radius-topright: @radius;
+      -ms-border-top-right-radius: @radius;
+  -webkit-border-top-right-radius: @radius;
+          border-top-right-radius: @radius;
+}
+
+.border-radius-bottom-right(@radius: @base-radius) {
+      -moz-border-radius-bottomright: @radius;
+      -ms-border-bottom-right-radius: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+          border-bottom-right-radius: @radius;
+}
+
+.border-radius-bottom-left(@radius: @base-radius) {
+      -moz-border-radius-bottomleft: @radius;
+      -ms-border-bottom-left-radius: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+          border-bottom-left-radius: @radius;
+}
+
 .transition(@property: all, @duration: 0s, @timing-function: ease, @delay: 0s) {
   -moz-transition: @property @duration @timing-function @delay;
   -o-transition: @property @duration @timing-function @delay;
