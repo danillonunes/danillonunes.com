@@ -20,20 +20,10 @@ body {
 }
 
 /**
- * @file
  * Tabs Styling
  *
- * Adds styles for the primary and secondary tabs.
- *
- * Compare this with default CSS found in the system module's stylesheet (a copy
- * of which is in drupal7-reference.css.)
+ * Copied from Zen.
  */
-
-
-/*
- * Basic positioning styles shared by primary and secondary tabs.
- */
-
 ul.primary,
 ul.secondary {
   overflow: hidden;
@@ -47,7 +37,7 @@ ul.secondary {
 
 ul.primary li,
 ul.secondary li {
-  float: left; /* LTR */
+  float: left;
   margin: 0.5em 3px 0;
 }
 
@@ -60,10 +50,6 @@ ul.secondary a {
   line-height: 1.5em;
   text-decoration: none;
 }
-
-/*
- * Primary tabs
- */
 
 ul.primary li {
   -moz-border-radius-topleft: 4px;
@@ -79,7 +65,7 @@ ul.primary li {
   text-shadow: white 1px 1px 0;
   border: 1px solid #bbbbbb;
   border-bottom: 0;
-  margin: 0.5em 0 0 3px; /* LTR */
+  margin: 0.5em 0 0 3px;
 }
 
 ul.primary li.active {
@@ -133,7 +119,6 @@ ul.primary a.active {
 /*
  * Secondary tabs
  */
-
 ul.secondary {
   font-size: .9em;
   margin-top: -1.5em; /* Collapse bottom margin of ul.primary. */
