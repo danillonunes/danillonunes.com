@@ -108,8 +108,8 @@ projects[omega][version] = 3.1
 ; ------------
 
 libraries[lessphp][download][type] = file
-libraries[lessphp][download][url] = http://leafo.net/lessphp/src/lessphp-0.3.4-2.tar.gz
-libraries[lessphp][download][md5] = 4d54697564df5aeeeeeebb906a5f7f72
+libraries[lessphp][download][url] = http://leafo.net/lessphp/src/lessphp-0.3.5.tar.gz
+libraries[lessphp][download][md5] = ce54d8e848a413c3a77cf846985b3f08
 
 libraries[modernizr][download][type] = file
 libraries[modernizr][download][url] = http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js
