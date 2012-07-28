@@ -54,7 +54,7 @@ projects[jquery_update][version] = 2.2
 
 projects[l10n_update][version] = 1.0-beta3
 
-projects[media][version] = 1.1
+projects[media][version] = 1.2
 
 projects[less][version] = 2.5
 
