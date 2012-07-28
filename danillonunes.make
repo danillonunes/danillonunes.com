@@ -23,6 +23,11 @@ projects[admin_menu][version] = 3.0-rc3
 
 projects[backup_migrate][version] = 2.4
 
+projects[backup_migrate_files][type] = module
+projects[backup_migrate_files][download][type] = git
+projects[backup_migrate_files][download][url] = http://git.drupal.org/project/backup_migrate_files.git
+projects[backup_migrate_files][download][branch] = 51562f652b6935ce005dddddd2529b4f7392998e
+
 projects[captcha][version] = 1.0-beta2
 
 projects[cdn][version] = 2.5
