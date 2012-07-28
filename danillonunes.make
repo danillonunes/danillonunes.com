@@ -40,7 +40,7 @@ projects[entity][version] = 1.0-rc3
 
 projects[environment_indicator][version] = 1.1
 
-projects[features][version] = 1.0-rc2
+projects[features][version] = 1.0
 
 projects[google_analytics][version] = 1.2
 
