@@ -1,3 +1,4 @@
+@import "properties.css.less";
 @import "variables.css.less";
 
 body {
@@ -15,6 +16,6 @@ body {
 }
 
 .messages {
-  border-radius: @base-radius;
+  .border-radius(@base-radius);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
