@@ -26,12 +26,6 @@ function dn_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'locale-language' => array(
-          'module' => 'locale',
-          'delta' => 'language',
-          'region' => 'menu',
-          'weight' => '-10',
-        ),
         'search-form' => array(
           'module' => 'search',
           'delta' => 'form',
@@ -43,6 +37,12 @@ function dn_context_default_contexts() {
           'delta' => 'about',
           'region' => 'sidebar_second',
           'weight' => '-9',
+        ),
+        'locale-language' => array(
+          'module' => 'locale',
+          'delta' => 'language',
+          'region' => 'header_first',
+          'weight' => '-10',
         ),
       ),
     ),
