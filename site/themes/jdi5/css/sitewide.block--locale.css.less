@@ -71,3 +71,16 @@
     padding: 0 (@base-margin / 2) (@base-margin / 2) (@base-margin / 2) + 24px;
   }
 }
+
+.csstransforms {
+  .responsive-layout-narrow,
+  .responsive-layout-normal,
+  .responsive-layout-wide {
+    .block-locale-language {
+      padding: 5px 45px 0 80px;
+         -moz-transform: rotate(30deg) translate(50px, -25px);
+      -webkit-transform: rotate(30deg) translate(50px, -25px);
+      transform: rotate(30deg) translate(50px, -25px);
+    }
+  }
+}
