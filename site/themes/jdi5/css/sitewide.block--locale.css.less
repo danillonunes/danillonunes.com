@@ -21,20 +21,20 @@
 
 .block-locale-language a:link,
 .block-locale-language a:visited {
-  color: #ccc;
+  color: #222;
   text-decoration: none;
 }
 
 .block-locale-language a:hover {
-  color: #fff;
+  color: #444;
 }
 
 .responsive-layout-narrow,
 .responsive-layout-normal,
 .responsive-layout-wide {
   .block-locale-language {
-    background-color: #444;
-    .border-radius-bottom(@base-radius);
+    background-color: #fff;
+    .border-radius-bottom-left(@base-radius);
     bottom: -2em;
     display: block;
     height: 2em;
@@ -42,7 +42,7 @@
     opacity: 0.6;
     padding: 0;
     position: absolute;
-    right: @base-margin;
+    right: 0;
     text-align: right;
     .transition(opacity, 0.25s);
     z-index: 10;
