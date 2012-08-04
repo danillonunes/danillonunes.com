@@ -60,6 +60,8 @@ projects[less][version] = 2.5
 
 projects[libraries][version] = 1.0
 
+projects[link][version] = 1.0
+
 projects[modernizr][version] = 2.1
 
 projects[openidurl][version] = 1.5
