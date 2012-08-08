@@ -2,4 +2,4 @@ drupal
 http
 private
 site/files
-site/settings.d/secret.settings.php
+site/settings/secret.settings.php
