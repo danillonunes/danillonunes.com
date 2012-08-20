@@ -38,6 +38,8 @@ projects[ctools][version] = 1.2
 
 projects[entity][version] = 1.0-rc3
 
+projects[entitycache][version] = 1.1
+
 projects[environment_indicator][version] = 1.1
 
 projects[features][version] = 1.0
