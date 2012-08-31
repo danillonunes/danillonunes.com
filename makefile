@@ -1,4 +1,4 @@
 # Build danillonunes.net website
 
 drupal : danillonunes.make
-		./build
+		php build.php
