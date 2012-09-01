@@ -1,0 +1,5 @@
+drupal
+http
+private
+site/files
+site/settings.d/secret.settings.php
