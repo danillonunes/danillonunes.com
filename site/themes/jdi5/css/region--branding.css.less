@@ -1,0 +1,50 @@
+@import "variables.css.less";
+
+.region-branding {
+  height: auto !important;
+  overflow: hidden;
+}
+
+/**
+ * Logo on Branding.
+ */
+.region-branding .logo-img {
+  float: none;
+  margin: @base-margin 0;
+}
+
+/**
+ * Logo.
+ */
+.logo-img a {
+  margin: 0 auto;
+  max-width: @logo-display-width;
+}
+
+.logo-img {
+  background-color: #ebebeb;
+  border-radius: @base-radius;
+}
+
+.backgroundsize
+.logo-img {
+  background-color: transparent;
+}
+
+.backgroundsize
+.logo-img a {
+  background: url('../images/logo-sprite.png') top left no-repeat;
+  background-size: 100%;
+  display: block;
+  padding: 0;
+
+  &:hover,
+  &:active {
+    background-position: bottom left;
+  }
+}
+
+.backgroundsize
+.logo-img img {
+  visibility: hidden;
+}

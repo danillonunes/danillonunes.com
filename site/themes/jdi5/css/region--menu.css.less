@@ -1,0 +1,52 @@
+@import "variables.css.less";
+
+.main-menu {
+  font-weight: bold;
+  margin: @base-margin 0;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.main-menu li {
+  float: left;
+  margin: 0;
+  width: 50%;
+}
+
+.main-menu a:link,
+.main-menu a:visited {
+  color: #ccc;
+  display: block;
+  padding: @base-margin 0;
+  text-decoration: none;
+  text-shadow: 0 0 10px #444;
+  transition-duration: 0.4s;
+  transition-property: background-image, color, text-shadow;
+  z-index: 10;
+}
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active,
+.main-menu li:hover a,
+.main-menu li:focus a,
+.main-menu li:active a,
+.main-menu li.active a {
+  color: #fff;
+  outline: 0;
+  text-shadow: 0 0 25px #fff;
+}
+
+.secondary-menu {
+  text-align: right;
+}
+
+.secondary-menu a:link,
+.secondary-menu a:visited {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.secondary-menu a:hover {
+  color: #fff;
+}

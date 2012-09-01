@@ -41,9 +41,17 @@ projects[hidden_captcha][version] = 1.0
 
 projects[i18n][version] = 1.5
 
+projects[jquery_update][version] = 2.2
+
 projects[l10n_update][version] = 1.0-beta3
 
 projects[media][version] = 1.1
+
+projects[less][version] = 2.5
+
+projects[libraries][version] = 1.0
+
+projects[modernizr][version] = 2.1
 
 projects[openidurl][version] = 1.5
 
@@ -51,12 +59,16 @@ projects[pathauto][version] = 1.1
 
 projects[pathologic][version] = 1.4
 
+projects[prefixfree][version] = 1.0-alpha1
+
 projects[redirect][version] = 1.0-beta4
 
 projects[reinvigorate][type] = module
 projects[reinvigorate][download][type] = git
 projects[reinvigorate][download][url] = http://git.drupal.org/sandbox/danillonunes/1555158.git
 projects[reinvigorate][download][branch] = 7.x-1.0-alpha2
+
+projects[respondjs][version] = 1.1
 
 projects[smtp][version] = 1.0-beta1
 
@@ -86,8 +98,25 @@ projects[rubik][version] = 4.0-beta6
 
 projects[tao][version] = 3.0-beta4
 
+projects[omega][version] = 3.1
+
 projects[zen][version] = 3.1
 
 ; Contrib libraries
 ; ------------
 
+libraries[lessphp][download][type] = file
+libraries[lessphp][download][url] = http://leafo.net/lessphp/src/lessphp-0.3.4-2.tar.gz
+libraries[lessphp][download][md5] = 4d54697564df5aeeeeeebb906a5f7f72
+
+libraries[modernizr][download][type] = file
+libraries[modernizr][download][url] = http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js
+libraries[modernizr][download][md5] = 315ea433abb47b0872e116ce65b09a73
+
+libraries[prefixfree][download][type] = git
+libraries[prefixfree][download][url] = https://github.com/LeaVerou/prefixfree.git
+libraries[prefixfree][download][branch] = e4a34d823eb6978a62f353fc4240132e1397e3b6
+
+libraries[respondjs][download][type] = git
+libraries[respondjs][download][url] = https://github.com/scottjehl/Respond.git
+libraries[respondjs][download][branch] = 1.2.0

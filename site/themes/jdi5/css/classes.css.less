@@ -1,0 +1,71 @@
+a.no-decoration,
+a.no-decoration:hover {
+  text-decoration: none;
+}
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.align-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.align-left {
+  float: left;
+  margin-right: 1em;
+}
+
+ul.no-padding {
+  padding: 0;
+}
+
+ul.no-decoration,
+ul.no-decoration li {
+  list-style: none;
+}
+
+.double-column {
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.no-csscolumns ul.double-column {
+  overflow: hidden;
+}
+
+.no-csscolumns ul.double-column li {
+  float: left;
+  width: 50%;
+}
+
+.no-csscolumns ul.double-column li:nth-child(odd) {
+  clear: left;
+  margin-right: 2%;
+  width: 48%;
+}
+
+.no-csscolumns ul.double-column li:nth-child(even) {
+  margin-left: 2%;
+  width: 48%;
+}
+
+.resizable-textarea textarea {
+  padding-bottom: (@base-margin / 2) + 10px;
+  resize: none;
+}
+
+.resizable-textarea .grippie {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: ns-resize;
+  margin-top: -10px;
+}

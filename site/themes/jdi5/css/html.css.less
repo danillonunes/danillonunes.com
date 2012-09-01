@@ -1,0 +1,72 @@
+@import "variables.css.less";
+@import "elements.css.less";
+
+a:link,
+a:visited {
+  color: @a-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: @a-visited-color;
+}
+
+a:focus,
+a:hover {
+  color: @a-hover-color;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+
+  &,
+  a:link,
+  a:visited {
+    color: @hn-a-color;
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  background: transparent;
+  border: 0;
+  border-top: 1px dashed #aaa;
+  height: 1px;
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  .field();
+}
+
+textarea {
+  .base-font();
+  padding: @base-margin / 2;
+}
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  .button();
+}
+
+@import "classes.css.less";

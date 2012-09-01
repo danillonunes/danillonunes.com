@@ -1,3 +1,3 @@
 <?php
 
-$conf['theme_default'] = 'jdi';
+$conf['theme_default'] = 'jdi5';
