@@ -1,0 +1,3 @@
+[submodule "site/themes/jdi5/css/property"]
+	path = site/themes/jdi5/css/property
+	url = git@github.com:danillonunes/property.git
