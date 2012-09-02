@@ -1,4 +1,4 @@
 # Build danillonunes.net website
 
-drupal : danillonunes.make
+drupal : .gitmodules danillonunes.make
 		./update
