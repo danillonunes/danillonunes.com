@@ -85,7 +85,7 @@ projects[styles][version] = 2.0-alpha8
 
 projects[strongarm][version] = 2.0
 
-projects[token][version] = 1.1
+projects[token][version] = 1.2
 
 projects[transliteration][version] = 3.1
 
