@@ -1,4 +1,4 @@
 # Build danillonunes.net website
 
 drupal : .gitmodules danillonunes.make
-		./update
+		php build/build.php
