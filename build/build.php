@@ -16,12 +16,13 @@ class Builder {
     'files' => 'files'
   );
 
-  private $cwd = getcwd();
+  private $cwd;
 
   /**
    * Start the build process.
    */
   public function init() {
+    $this->cwd = getcwd();
     $this->make($this->makefile, $this->path);
   }
 
@@ -48,9 +49,9 @@ class Builder {
     system("mv $path $old_path");
     system("mv $tmp_path $path");
 
-    system("rm -rf $path/{$this->public_path['site']}");
-    system("ln -s {$this->local_path['site']} $path/{$this->public_path['site']}");
-    system("ln -s {$this->local_path['files']} $path/{$this->public_path['files']}");
+    system("rm -rf " . $this->public_path('site'));
+    system("ln -s " . $this->local_path('site') . " " . $this->public_path('site'));
+    system("ln -s " . $this->local_path('files') . " " . $this->public_path('files'));
     $this->make_clean($path);
   }
 
@@ -63,6 +64,21 @@ class Builder {
 
     system("rm -rf $tmp_path");
     system("rm -rf $old_path");
+  }
+
+  /**
+   * Get local path.
+   */
+  private function local_path($path) {
+    return implode(array($this->cwd, $this->local_path[$path]), '/');
+  }
+
+  /**
+   * Get public path.
+   */
+  private function public_path($path) {
+    print implode(array($this->cwd, $this->path, $this->public_path[$path]), '/');
+    return implode(array($this->cwd, $this->path, $this->public_path[$path]), '/');
   }
 
   /**
