@@ -77,7 +77,6 @@ class Builder {
    * Get public path.
    */
   private function public_path($path) {
-    print implode(array($this->cwd, $this->path, $this->public_path[$path]), '/');
     return implode(array($this->cwd, $this->path, $this->public_path[$path]), '/');
   }
 
