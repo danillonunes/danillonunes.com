@@ -34,7 +34,7 @@ projects[cdn][version] = 2.5
 
 projects[context][version] = 3.0-beta4
 
-projects[ctoolss][version] = 1.2
+projects[ctools][version] = 1.2
 
 projects[entity][version] = 1.0-rc3
 
