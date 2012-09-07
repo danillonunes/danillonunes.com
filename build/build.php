@@ -34,7 +34,7 @@ class Builder {
 
     $this->make_clean($path);
 
-    system("drush make $makefile $tmp_path");
+    $this->run("drush make $makefile $tmp_path", TRUE);
 
     $this->make_move($path);
   }
@@ -46,12 +46,12 @@ class Builder {
     $tmp_path = $this->get_make_tmp_path($path);
     $old_path = $this->get_make_old_path($path);
 
-    system("mv $path $old_path");
-    system("mv $tmp_path $path");
+    $this->run("mv $path $old_path");
+    $this->run("mv $tmp_path $path");
 
-    system("rm -rf " . $this->public_path('site'));
-    system("ln -s " . $this->local_path('site') . " " . $this->public_path('site'));
-    system("ln -s " . $this->local_path('files') . " " . $this->public_path('files'));
+    $this->run("rm -rf " . $this->public_path('site'));
+    $this->run("ln -s " . $this->local_path('site') . " " . $this->public_path('site'));
+    $this->run("ln -s " . $this->local_path('files') . " " . $this->public_path('files'));
     $this->make_clean($path);
   }
 
@@ -62,8 +62,8 @@ class Builder {
     $tmp_path = $this->get_make_tmp_path($path);
     $old_path = $this->get_make_old_path($path);
 
-    system("rm -rf $tmp_path");
-    system("rm -rf $old_path");
+    $this->run("rm -rf $tmp_path");
+    $this->run("rm -rf $old_path");
   }
 
   /**
@@ -92,6 +92,17 @@ class Builder {
    */
   private function get_make_old_path($path) {
     return "$path-old";
+  }
+
+  /**
+   * Run a given command with support to error exit.
+   */
+  private function run($command, $error = FALSE) {
+    system($command, $status);
+
+    if ($error && $status) {
+      exit($status);
+    }
   }
 }
 
