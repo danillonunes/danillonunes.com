@@ -7,36 +7,28 @@ screenshot = screenshot.png
 base theme = omega
 
 ; REQUIRED CORE REGIONS
-
 regions[page_top] = Page Top
 regions[page_bottom] = Page Bottom
 regions[content] = Content
 
 ; ADDITIONAL REGIONS
-
 regions[branding] = Branding
 regions[menu] = Menu
-
 regions[sidebar_first] = Sidebar First
 regions[sidebar_second] = Sidebar Second
-
 regions[header_first] = Header First
 regions[header_second] = Header Second
-
 regions[preface_first] = Preface First
 regions[preface_second] = Preface Second
 regions[preface_third] = Preface Third
-
 regions[postscript_first] = Postscript First
 regions[postscript_second] = Postscript Second
 regions[postscript_third] = Postscript Third
 regions[postscript_fourth] = Postscript Fourth
-
 regions[footer_first] = Footer First
 regions[footer_second] = Footer Second
 
 ; ZONES
-
 zones[header] = Header
 zones[preface] = Preface
 zones[content] = Content
@@ -46,7 +38,6 @@ zones[footer] = Footer
 ; OPTIONAL STYLESHEETS
 
 ; THEME SETTINGS (DEFAULTS)
-
 settings[alpha_grid] = 'alpha_default'
 settings[alpha_primary_alpha_default] = 'normal'
 settings[alpha_responsive] = '1'
@@ -82,6 +73,9 @@ settings[alpha_css][omega-branding.css] = 'omega-branding.css'
 settings[alpha_css][omega-menu.css] = 'omega-menu.css'
 settings[alpha_css][omega-forms.css] = 'omega-forms.css'
 settings[alpha_css][omega-visuals.css] = 'omega-visuals.css'
+
+; EXCLUDE CORE CSS FILES
+; FILES WITH A "0" VALUE ARE NOT EXCLUDED
 settings[alpha_exclude][modules/comment/comment.css] = 'modules/comment/comment.css'
 settings[alpha_exclude][modules/field/theme/field.css] = 'modules/field/theme/field.css'
 settings[alpha_exclude][modules/node/node.css] = 'modules/node/node.css'
@@ -111,9 +105,12 @@ settings[alpha_exclude][modules/taxonomy/taxonomy.css] = 'modules/taxonomy/taxon
 settings[alpha_exclude][modules/tracker/tracker.css] = 'modules/tracker/tracker.css'
 settings[alpha_exclude][modules/update/update.css] = 'modules/update/update.css'
 settings[alpha_exclude][modules/system/system.base.css] = '0'
+
+; DEBUG BLOCKS
 settings[alpha_debug_block_toggle] = '0'
 settings[alpha_debug_grid_toggle] = '0'
 settings[alpha_debug_grid_active] = '0'
+
 settings[alpha_toggle_messages] = '1'
 settings[alpha_toggle_action_links] = '1'
 settings[alpha_toggle_tabs] = '1'
