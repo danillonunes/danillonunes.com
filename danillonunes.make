@@ -39,6 +39,10 @@ projects[ctools][version] = 1.2
 projects[entity][version] = 1.0-rc3
 
 projects[entitycache][version] = 1.1
+; Prevent error with test suite due to rename of test class. See to issue:
+; Rename of NodeAccessRecordsUnitTest to NodeAccessRecordsTestCase in node.test
+; breaks entitycache.test and core testing
+projects[entitycache][patch][1559070] = http://drupal.org/files/entitycache-testcase-renaming.patch
 
 projects[environment_indicator][version] = 1.1
 
