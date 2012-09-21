@@ -78,6 +78,11 @@ projects[pathauto][version] = 1.2
 
 projects[pathologic][version] = 2.3
 
+projects[quick_simpletest][type] = module
+projects[quick_simpletest][download][type] = git
+projects[quick_simpletest][download][url] = http://git.drupal.org/project/quick_simpletest.git
+projects[quick_simpletest][download][branch] = f3d369ca23b34b0318a81c23e1b5e86cb21e2872
+
 projects[prefixfree][version] = 1.0-alpha1
 
 projects[redirect][version] = 1.0-beta4
