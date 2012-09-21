@@ -16,6 +16,10 @@ api = 2
 
 projects[drupal][version] = 7.15
 
+; Quick SimpleTest patch to Drupal core
+projects[drupal][patch][quick_simpletest] =
+http://drupalcode.org/project/quick_simpletest.git/blob_plain/f3d369ca23b34b0318a81c23e1b5e86cb21e2872:/quick_simpletest_bootstrap.patch
+
 ; Contrib modules
 ; ------------
 
