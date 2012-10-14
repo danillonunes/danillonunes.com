@@ -72,6 +72,8 @@ projects[modernizr][version] = 2.1
 
 projects[openidurl][version] = 1.5
 
+projects[paranoia][version] = 1.0
+
 projects[pathauto][version] = 1.2
 
 projects[pathologic][version] = 2.3
