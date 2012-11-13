@@ -1,5 +1,31 @@
+@import "variables.css.less";
+
+.region-menu .region-menu-inner,
+.region-menu .navigation,
+.region-menu .main-menu {
+  display: block;
+  height: 100%;
+}
+
+.navigation {
+  position: relative;
+}
+
+.main-menu {
+  float: right;
+  margin: 0;
+}
+
 .main-menu li {
   display: table;
   height: 100%;
   width: auto;
+}
+
+.main-menu a:link,
+.main-menu a:visited {
+  display: table-cell;
+  height: 100%;
+  padding: 0 @base-margin / 2;
+  vertical-align: middle;
 }
