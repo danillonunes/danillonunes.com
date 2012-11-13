@@ -116,6 +116,8 @@ projects[rubik][version] = 4.0-beta6
 projects[tao][version] = 3.0-beta4
 
 projects[omega][version] = 3.1
+; Fix conflict between Omega and Less
+projects[omega][patch][1627478] = http://drupal.org/files/preprocess-aggregation-1627478-14.patch
 
 ; Contrib libraries
 ; ------------
