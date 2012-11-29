@@ -78,7 +78,7 @@ projects[pathologic][version] = 2.10
 
 projects[prefixfree][version] = 1.0-alpha1
 
-projects[redirect][version] = 1.0-beta4
+projects[redirect][version] = 1.0-rc1
 
 projects[reinvigorate][type] = module
 projects[reinvigorate][download][type] = git
