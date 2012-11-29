@@ -50,7 +50,7 @@ projects[environment_indicator][version] = 1.1
 
 projects[features][version] = 1.0
 
-projects[google_analytics][version] = 1.2
+projects[google_analytics][version] = 1.3
 
 projects[hidden_captcha][version] = 1.0
 
