@@ -57,10 +57,10 @@ class Builder {
     $tmp_path = $this->get_make_tmp_path($path);
     $old_path = $this->get_make_old_path($path);
 
-    $this->run("mv $path $old_path");
-    $this->run("mv $tmp_path $path");
+    $this->safe_mv($path, $old_path);
+    $this->safe_mv($tmp_path, $path);
 
-    $this->run("rm -rf " . $this->public_path('site'));
+    $this->safe_rm($this->public_path('site'));
     $this->run("ln -s " . $this->local_path('site') . " " . $this->public_path('site'));
     $this->run("ln -s " . $this->local_path('files') . " " . $this->public_path('files'));
     $this->make_tmp_clean($path);
@@ -73,15 +73,15 @@ class Builder {
     $tmp_path = $this->get_make_tmp_path($path);
     $old_path = $this->get_make_old_path($path);
 
-    $this->run("rm -rf $tmp_path");
-    $this->run("rm -rf $old_path");
+    $this->safe_rm("$tmp_path");
+    $this->safe_rm("$old_path");
   }
 
   /**
    * Clean build path.
    */
   private function make_clean($path) {
-    $this->run("rm -rf $path");
+    $this->safe_rm("$path");
   }
 
   /**
@@ -110,6 +110,24 @@ class Builder {
    */
   private function get_make_old_path($path) {
     return "$path-old";
+  }
+
+  /**
+   * Remove a file or directory if it exists.
+   */
+  private function safe_rm($path) {
+    if (is_dir($path)) {
+      $this->run("rm -rf $path");
+    }
+  }
+
+  /**
+   * Move a file or directory if it exists.
+   */
+  private function safe_mv($path, $destination) {
+    if (is_dir($path)) {
+      $this->run("mv $path $destination");
+    }
   }
 
   /**
