@@ -23,7 +23,18 @@ class Builder {
    */
   public function init() {
     $this->cwd = getcwd();
-    $this->make($this->makefile, $this->path);
+    global $argv;
+
+    if (isset($argv[1])) {
+      switch ($argv[1]) {
+        case 'clean':
+          $this->make_clean($this->path);
+          break;
+      }
+    }
+    else {
+      $this->make($this->makefile, $this->path);
+    }
   }
 
   /**
@@ -32,7 +43,7 @@ class Builder {
   private function make($makefile, $path) {
     $tmp_path = $this->get_make_tmp_path($path);
 
-    $this->make_clean($path);
+    $this->make_tmp_clean($path);
 
     $this->run("drush make $makefile $tmp_path", TRUE);
 
@@ -52,18 +63,25 @@ class Builder {
     $this->run("rm -rf " . $this->public_path('site'));
     $this->run("ln -s " . $this->local_path('site') . " " . $this->public_path('site'));
     $this->run("ln -s " . $this->local_path('files') . " " . $this->public_path('files'));
-    $this->make_clean($path);
+    $this->make_tmp_clean($path);
   }
 
   /**
    * Clean temporary paths from old builds.
    */
-  private function make_clean($path) {
+  private function make_tmp_clean($path) {
     $tmp_path = $this->get_make_tmp_path($path);
     $old_path = $this->get_make_old_path($path);
 
     $this->run("rm -rf $tmp_path");
     $this->run("rm -rf $old_path");
+  }
+
+  /**
+   * Clean build path.
+   */
+  private function make_clean($path) {
+    $this->run("rm -rf $path");
   }
 
   /**
