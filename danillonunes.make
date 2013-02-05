@@ -19,7 +19,7 @@ projects[drupal][version] = 7.19
 ; Contrib modules
 ; ------------
 
-projects[admin_menu][version] = 3.0-rc3
+projects[admin_menu][version] = 3.0-rc4
 
 projects[backup_migrate][version] = 2.4
 
