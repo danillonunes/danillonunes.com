@@ -2,29 +2,52 @@
 @import "variables.css.less";
 @import "property/property.css.less";
 
-.block-locale-language .block-title {
+.block-locale-language {
+  display: block;
+}
+
+.block-locale-language .block-title,
+.block-locale-language li.active {
   .element-invisible();
 }
 
-.block-locale-language a {
-  background: url('../images/flags.png') top left no-repeat;
-  padding-left: 24px;
+.block-locale-language ul {
+  margin: 0;
 }
 
-.block-locale-language .en a {
+.block-locale-language a {
+  background-color: #555;
+  display: block;
+  padding: (@base-margin / 2) @base-margin;
+  position: relative;
+  text-align: left;
+  z-index: 10;
+}
+
+.block-locale-language a::before {
+  background: url('../images/flags.png') top left no-repeat;
+  content: '';
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+  z-index: 10;
+}
+
+.block-locale-language .en a::before {
   background-position: 0 -15px;
 }
 
-.block-locale-language .pt-br a {
+.block-locale-language .pt-br a::before {
   background-position: 0 -63px;
 }
 
 .block-locale-language a:link,
 .block-locale-language a:visited {
-  color: #222;
+  color: #fff;
   text-decoration: none;
 }
 
 .block-locale-language a:hover {
-  color: #444;
+  background-color: #5a5a5a;
 }

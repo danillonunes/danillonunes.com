@@ -1,51 +1,13 @@
-@import "elements.css.less";
 @import "variables.css.less";
-@import "property/property.css.less";
 
 .block-locale-language {
-  background-color: #fff;
-  .border-radius-bottom-left(@base-radius);
-  bottom: -2em;
-  display: block;
-  height: 2em;
-  margin: 0;
-  opacity: 0.6;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  .transition(opacity, 0.25s);
-  z-index: 10;
-}
-
-.block-locale-language:hover {
-  opacity: 1;
-}
-
-.csstransforms {
-  .block-locale-language {
-    padding: 5px 45px 0 80px;
-       -moz-transform: rotate(30deg) translate(50px, -25px);
-    -webkit-transform: rotate(30deg) translate(50px, -25px);
-    transform: rotate(30deg) translate(50px, -25px);
-  }
+  float: right;
 }
 
 .block-locale-language ul {
-  margin: 0;
-}
-
-.block-locale-language li {
-  display: inline;
-  margin: 0 @base-margin / 2;
-  padding: 0;
-}
-
-.block-locale-language li.active {
-  .element-invisible();
+  list-style: none;
 }
 
 .block-locale-language a {
-  line-height: 1.75em;
-  padding: 0 (@base-margin / 2) (@base-margin / 2) (@base-margin / 2) + 24px;
+  border-radius: 0 0 0 @base-radius;
 }
