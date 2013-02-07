@@ -55,17 +55,22 @@ foreach ($settings_files as $settings_file) {
 function get_environment() {
   $environment = '';
 
-  switch ($_SERVER["SERVER_ADDR"]) {
-    case '127.0.0.1':
-      $environment = 'development';
-      break;
+  if (isset($_SERVER['APPLICATION_ENV'])) {
+    $environment = $_SERVER['APPLICATION_ENV'];
   }
+  else {
+    switch ($_SERVER["SERVER_ADDR"]) {
+      case '127.0.0.1':
+        $environment = 'development';
+        break;
+    }
 
-  switch ($_SERVER['HTTP_HOST']) {
-    case 'danillonunes.net':
-    case 'dh.danillonunes.net':
-      $environment = 'production';
-      break;
+    switch ($_SERVER['HTTP_HOST']) {
+      case 'danillonunes.net':
+      case 'dh.danillonunes.net':
+        $environment = 'production';
+        break;
+    }
   }
 
   if (strpos($_SERVER["SCRIPT_FILENAME"], 'drush.php')) {
