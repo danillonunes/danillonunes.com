@@ -1,3 +1,3 @@
-[submodule "site/themes/jdi5/css/property"]
-	path = site/themes/jdi5/css/property
+[submodule "http/sites/default/themes/jdi5/css/property"]
+	path = http/sites/default/themes/jdi5/css/property
 	url = https://github.com/danillonunes/property.git

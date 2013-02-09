@@ -5,17 +5,6 @@
 class Builder {
   private $makefile = 'danillonunes.make';
   private $path = 'drupal';
-
-  private $local_path = array(
-    'site' => 'site',
-    'files' => 'site/files'
-  );
-
-  private $public_path = array(
-    'site' => 'sites/default',
-    'files' => 'files'
-  );
-
   private $cwd;
 
   /**
@@ -60,9 +49,6 @@ class Builder {
     $this->safe_mv($path, $old_path);
     $this->safe_mv($tmp_path, $path);
 
-    $this->safe_rm($this->public_path('site'));
-    $this->run("ln -s " . $this->local_path('site') . " " . $this->public_path('site'));
-    $this->run("ln -s " . $this->local_path('files') . " " . $this->public_path('files'));
     $this->make_tmp_clean($path);
   }
 
