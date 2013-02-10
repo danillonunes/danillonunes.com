@@ -34,6 +34,8 @@ projects[captcha][version] = 1.0-beta2
 
 projects[cdn][version] = 2.5
 
+projects[cloudflare][version] = 1.0-beta2
+
 projects[context][version] = 3.0-beta6
 
 projects[ctools][version] = 1.2
