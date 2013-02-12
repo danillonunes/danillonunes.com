@@ -80,7 +80,7 @@ function assets_autoload($variables, $hook) {
 
   $css_path = drupal_get_path('theme', $theme_name) . '/css';
   foreach ($css_suggestions as $filename => $css_suggestion) {
-    if ($file = alpha_find_stylesheet($css_path, 'sitewide.' . $filename)) {
+    if ($file = alpha_find_stylesheet($css_path, 'sitewide/' . $filename)) {
       $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
       $options['every_page'] = TRUE;
       drupal_add_css($file, $options);
