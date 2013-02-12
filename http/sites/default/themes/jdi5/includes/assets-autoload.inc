@@ -13,7 +13,7 @@
  * .sass or .scss can be added.
  *
  * Omega's grids and layouts are also considered, so for a grid named
- * 'alpha_default', a stylesheet named 'page--front--alpha-default-normal.css'
+ * 'alpha_default', a stylesheet called 'alpha-default/normal/page--front.css'
  * will be loaded with media query of the layout called 'normal'.
  *
  * @see alpha_find_stylesheet().
@@ -42,8 +42,8 @@ function assets_autoload($variables, $hook) {
     foreach ($layouts as $layout) {
       $grid_sanitized = $grid['sanitized'];
       $layout_sanitized = $layout['sanitized'];
-      $filename_layout_array = array($filename, "$grid_sanitized");
-      $filename_layout = implode('--', $filename_layout_array);
+      $filename_layout_array = array($grid_sanitized, $filename);
+      $filename_layout = implode('/', $filename_layout_array);
 
       $css_suggestions[$filename_layout] = array(
         'data' => $filename_layout,
@@ -56,8 +56,8 @@ function assets_autoload($variables, $hook) {
         )
       );
 
-      $filename_layout_array = array($filename, "$grid_sanitized-$layout_sanitized");
-      $filename_layout = implode('--', $filename_layout_array);
+      $filename_layout_array = array($grid_sanitized, $layout_sanitized, $filename);
+      $filename_layout = implode('/', $filename_layout_array);
 
       /**
        * Generate a CSS suggestion that will be added if the CSS file exists.
@@ -80,13 +80,14 @@ function assets_autoload($variables, $hook) {
 
   $css_path = drupal_get_path('theme', $theme_name) . '/css';
   foreach ($css_suggestions as $filename => $css_suggestion) {
+    $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
+    $options['basename'] = $filename;
     if ($file = alpha_find_stylesheet($css_path, 'sitewide/' . $filename)) {
-      $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
       $options['every_page'] = TRUE;
+      $options['basename'] = 'sitewide/' . $options['basename'];
       drupal_add_css($file, $options);
     }
     elseif ($file = alpha_find_stylesheet($css_path, $filename)) {
-      $options = !empty($css_suggestion['options']) ? $css_suggestion['options'] : NULL;
       drupal_add_css($file, $options);
     }
   }
