@@ -1,7 +1,19 @@
 .section-header {
   background: #333 url('../../images/header-bg.png') bottom left repeat-x;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
+  position: relative;
+}
+
+.section-header::after {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -moz-linear-gradient(top center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  bottom: -10px;
+  content: '';
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
 }
 
 .responsive-layout-narrow,
