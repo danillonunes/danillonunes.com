@@ -15,30 +15,37 @@
   margin: 0;
 }
 
+.block-locale-language {
+  background-color: #888;
+  overflow: hidden;
+}
+
 .block-locale-language a {
-  background-color: #555;
+  background-color: #888;
   display: block;
-  padding: (@base-margin / 2) @base-margin;
+  float: right;
+  padding: (@base-margin / 2);
+  padding-right: @base-margin;
   position: relative;
-  text-align: left;
   z-index: 10;
 }
 
-.block-locale-language a::before {
+.block-locale-language a::after {
   background: url('../../images/flags.png') top left no-repeat;
   content: '';
   display: block;
   float: left;
-  height: 24px;
+  height: 17px;
+  margin-top: 1px;
   width: 24px;
   z-index: 10;
 }
 
-.block-locale-language .en a::before {
+.block-locale-language .en a::after {
   background-position: 0 -15px;
 }
 
-.block-locale-language .pt-br a::before {
+.block-locale-language .pt-br a::after {
   background-position: 0 -63px;
 }
 
@@ -49,5 +56,5 @@
 }
 
 .block-locale-language a:hover {
-  background-color: #5a5a5a;
+  background-color: #888;
 }
