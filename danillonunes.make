@@ -1,6 +1,9 @@
 ; danillonunes.net makefile
 ; ----------------
 
+build[path] = drupal
+build[cache][path] = .build/cache
+
 ; Core version
 ; ------------
 
