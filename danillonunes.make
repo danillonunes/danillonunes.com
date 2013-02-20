@@ -119,13 +119,11 @@ projects[xmlsitemap][version] = 2.0-rc2
 ; Contrib themes
 ; ------------
 
-projects[rubik][version] = 4.0-beta6
-
-projects[tao][version] = 3.0-beta4
-
 projects[omega][version] = 3.1
 ; Fix conflict between Omega and Less
 projects[omega][patch][1627478] = http://drupal.org/files/preprocess-aggregation-1627478-14.patch
+
+projects[shiny][version] = 1.0
 
 ; Contrib libraries
 ; ------------
