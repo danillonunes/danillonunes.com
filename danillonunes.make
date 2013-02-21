@@ -92,7 +92,7 @@ projects[reinvigorate][download][branch] = 7.x-1.0-alpha2
 
 projects[respondjs][version] = 1.2
 
-projects[smtp][version] = 1.0-beta2
+projects[smtp][version] = 1.0
 
 projects[styles][version] = 2.0-alpha8
 
