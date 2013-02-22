@@ -6,7 +6,7 @@ php:
 before_script:
  - pyrus channel-discover pear.drush.org
  - pyrus install drush/drush
- - git clone http://git.drupal.org/sandbox/danillonunes/1919260.git ~/.drush/commands/build
+ - git clone http://git.drupal.org/project/drush_build.git ~/.drush/commands/build
  - phpenv rehash
  - drush cache-clear drush
 
