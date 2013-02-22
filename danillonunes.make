@@ -123,8 +123,6 @@ projects[omega][version] = 3.1
 ; Fix conflict between Omega and Less
 projects[omega][patch][1627478] = http://drupal.org/files/preprocess-aggregation-1627478-14.patch
 
-projects[shiny][version] = 1.0
-
 ; Contrib libraries
 ; ------------
 
