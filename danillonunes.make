@@ -127,7 +127,7 @@ projects[omega][patch][1627478] = http://drupal.org/files/preprocess-aggregation
 ; ------------
 
 libraries[ckeditor][download][type] = file
-libraries[ckeditor][download][url] =  http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0.1/ckeditor_4.0.1_full.zip
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0.1/ckeditor_4.0.1_full.zip
 libraries[ckeditor][download][md5] = d47c37acf2d03ffe6ad39f55e00b099b
 
 libraries[lessphp][download][type] = file
