@@ -35,7 +35,7 @@ projects[boost][version] = 1.0-beta2
 
 projects[captcha][version] = 1.0-beta2
 
-projects[cdn][version] = 2.5
+projects[cdn][version] = 2.6
 
 projects[cloudflare][version] = 1.0-beta2
 
