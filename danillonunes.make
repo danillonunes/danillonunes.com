@@ -104,7 +104,7 @@ projects[transliteration][version] = 3.1
 
 projects[variable][version] = 2.2
 
-projects[views][version] = 3.5
+projects[views][version] = 3.6
 
 projects[vinculum][type] = module
 projects[vinculum][download][type] = git
