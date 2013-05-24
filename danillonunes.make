@@ -24,7 +24,7 @@ projects[drupal][version] = 7.22
 
 projects[admin_menu][version] = 3.0-rc4
 
-projects[backup_migrate][version] = 2.4
+projects[backup_migrate][version] = 2.7
 
 projects[backup_migrate_files][type] = module
 projects[backup_migrate_files][download][type] = git
