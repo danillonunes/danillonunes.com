@@ -43,7 +43,7 @@ projects[context][version] = 3.0-beta6
 
 projects[ctools][version] = 1.3
 
-projects[entity][version] = 1.0
+projects[entity][version] = 1.1
 
 projects[entitycache][version] = 1.1
 ; Prevent error with test suite due to rename of test class. See to issue:
