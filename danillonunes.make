@@ -69,7 +69,7 @@ projects[l10n_update][version] = 1.0-beta3
 
 projects[media][version] = 1.3
 
-projects[less][version] = 2.6
+projects[less][version] = 3.0
 
 projects[libraries][version] = 1.0
 
