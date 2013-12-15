@@ -39,7 +39,7 @@ projects[cdn][version] = 2.6
 
 projects[cloudflare][version] = 1.0-beta2
 
-projects[context][version] = 3.0-beta6
+projects[context][version] = 3.1
 
 projects[ctools][version] = 1.3
 
