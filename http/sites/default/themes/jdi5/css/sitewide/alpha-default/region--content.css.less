@@ -1,5 +1,30 @@
 @import "../../variables.css.less";
 
+.region-content {
+  border-right: 1px solid #dedede;
+  position: relative;
+}
+
+.region-content::before {
+  background: -moz-linear-gradient(
+    center left,
+    #bebebe 0%,
+    #ffffff 100%
+  );
+  background: -webkit-gradient(
+    linear, left center, right center,
+    color-stop(0, #bebebe),
+    color-stop(1, #ffffff)
+  );
+  content: '';
+  height: 100%;
+  opacity: 0.25;
+  position: absolute;
+  right: @base-margin * -30;
+  top: 0;
+  width: @base-margin * 30;
+}
+
 .region-content > .region-inner {
   border-width: 1px;
   margin-left: @base-margin;
