@@ -55,7 +55,7 @@ projects[google_analytics][version] = 1.4
 
 projects[hidden_captcha][version] = 1.0
 
-projects[honeypot][version] = 1.14
+projects[honeypot][version] = 1.16
 
 projects[i18n][version] = 1.9
 
