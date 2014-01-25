@@ -75,7 +75,7 @@ projects[openidurl][version] = 1.5
 
 projects[pathauto][version] = 1.2
 
-projects[pathologic][version] = 2.11
+projects[pathologic][version] = 2.12
 
 projects[prefixfree][version] = 1.0-alpha1
 
