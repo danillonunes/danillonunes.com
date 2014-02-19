@@ -1,5 +1,5 @@
 danillonunes.net is the source of http://danillonunes.net website.
-Copyright (c) 2004-2012 Marcus Danillo M. Nunes
+Copyright (c) since 2004 Marcus Danillo M. Nunes
 
 danillonunes.net name and logo should not be used without authorization.
 
