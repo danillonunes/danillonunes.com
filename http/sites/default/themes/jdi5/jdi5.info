@@ -72,7 +72,7 @@ settings[alpha_css][omega-text.css] = 'omega-text.css'
 settings[alpha_css][omega-branding.css] = 'omega-branding.css'
 settings[alpha_css][omega-menu.css] = 'omega-menu.css'
 settings[alpha_css][omega-forms.css] = 'omega-forms.css'
-settings[alpha_css][omega-visuals.css] = 'omega-visuals.css'
+settings[alpha_css][omega-visuals.css] = '0'
 
 ; EXCLUDE CORE CSS FILES
 ; FILES WITH A "0" VALUE ARE NOT EXCLUDED
