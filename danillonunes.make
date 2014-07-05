@@ -76,6 +76,8 @@ projects[libraries][version] = 1.0
 
 projects[modernizr][version] = 2.1
 
+projects[memcache][version] = 1.2
+
 projects[openidurl][version] = 1.5
 
 projects[pathauto][version] = 1.2
