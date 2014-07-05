@@ -26,6 +26,8 @@ projects[admin_menu][version] = 3.0-rc4
 
 projects[adminimal_admin_menu][version] = 1.5
 
+projects[advagg][version] = 2.7
+
 projects[backup_migrate][version] = 2.8
 
 projects[backup_migrate_files][type] = module
