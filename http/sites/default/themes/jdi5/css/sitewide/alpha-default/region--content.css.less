@@ -6,6 +6,7 @@
 }
 
 .region-content::before {
+  background: #aeaeae;
   background: -moz-linear-gradient(
     center left,
     #bebebe 0%,
@@ -13,16 +14,16 @@
   );
   background: -webkit-gradient(
     linear, left center, right center,
-    color-stop(0, #bebebe),
-    color-stop(1, #ffffff)
+    color-stop(0, #aeaeae),
+    color-stop(1, #cecece)
   );
   content: '';
   height: 100%;
   opacity: 0.25;
   position: absolute;
-  right: @base-margin * -30;
+  right: @base-margin * -42;
   top: 0;
-  width: @base-margin * 30;
+  width: @base-margin * 42;
 }
 
 .region-content > .region-inner {
