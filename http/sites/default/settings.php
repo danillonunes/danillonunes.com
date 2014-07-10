@@ -64,10 +64,8 @@ function get_environment() {
         $environment = 'development';
         break;
     }
-
     switch ($_SERVER['HTTP_HOST']) {
-      case 'danillonunes.net':
-      case 'dh.danillonunes.net':
+      case 'danillonunes.com':
         $environment = 'production';
         break;
     }
