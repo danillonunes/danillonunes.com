@@ -107,7 +107,7 @@ projects[token][version] = 1.5
 
 projects[transliteration][version] = 3.2
 
-projects[variable][version] = 2.4
+projects[variable][version] = 2.5
 
 projects[views][version] = 3.8
 
