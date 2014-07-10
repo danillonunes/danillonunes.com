@@ -4,13 +4,9 @@
  * Set base url for production site.
  */
 switch ($_SERVER['HTTP_HOST']) {
-  case 'danillonunes.net':
-    $base_url = 'http://danillonunes.net';
-    $cookie_domain = 'danillonunes.net';
-    break;
-  case 'dh.danillonunes.net':
-    $base_url = 'http://dh.danillonunes.net';
-    $cookie_domain = 'dh.danillonunes.net';
+  case 'danillonunes.com':
+    $base_url = 'http://danillonunes.com';
+    $cookie_domain = 'danillonunes.com';
     break;
 }
 
