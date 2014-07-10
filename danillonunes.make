@@ -72,7 +72,7 @@ projects[media][version] = 1.4
 
 projects[less][version] = 3.0
 
-projects[libraries][version] = 1.0
+projects[libraries][version] = 2.2
 
 projects[modernizr][version] = 2.1
 
