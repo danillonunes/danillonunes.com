@@ -9,5 +9,6 @@ before_script:
  - git clone http://git.drupal.org/project/drush_build.git ~/.drush/commands/build
  - phpenv rehash
  - drush cache-clear drush
+ - mysql -e 'create database danillonunes;'
 
 script: make && make test && make clean
