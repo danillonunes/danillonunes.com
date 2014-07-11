@@ -19,7 +19,7 @@ $settings_dir = dirname(__FILE__) . '/settings';
 /**
  * Includes Drupal's default settings file.
  */
-require_once $settings_dir . '/default.settings.php';
+require_once dirname(__FILE__) . '/default.settings.php';
 
 $environment = get_environment();
 
