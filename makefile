@@ -3,6 +3,9 @@
 drupal : .gitmodules danillonunes.make
 		drush build
 
+install : drupal
+		cd http && drush site-install --db-url=mysql://travis:@localhost/danillonunes -y
+
 clean :
 		rm -rf drupal
 
