@@ -11,4 +11,4 @@ before_script:
  - drush cache-clear drush
  - mysql -e 'create database danillonunes;'
 
-script: make && make test && make clean
+script: make && make test && make install && make clean
