@@ -9,7 +9,7 @@
  * inexistent file. Make sure all your settings files can be found on the
  * settings directory, even if they are empty.
  */
-define('SETTINGS_SAFE_INCLUDES', FALSE);
+define('SETTINGS_SAFE_INCLUDES', TRUE);
 
 /**
  * Settings directory.
