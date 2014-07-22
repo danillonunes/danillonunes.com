@@ -40,7 +40,7 @@ projects[captcha][version] = 1.0-beta2
 projects[cdn][version] = 2.6
 projects[cdn][patch][1942230] = https://www.drupal.org/files/cdn-1942230-18-advagg-hooks.patch
 
-projects[cloudflare][version] = 1.0-beta2
+projects[cloudflare][version] = 1.0-beta4
 
 projects[context][version] = 3.2
 
