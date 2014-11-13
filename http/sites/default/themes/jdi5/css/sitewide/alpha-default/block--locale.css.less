@@ -3,6 +3,7 @@
 .block-locale-language {
   background: transparent;
   float: right;
+  margin: 8px;
 }
 
 .block-locale-language ul {
@@ -10,10 +11,11 @@
 }
 
 .block-locale-language a {
-  background-color: #555;
-  border-radius: 0 0 0 @base-radius;
+  background: transparent;
+  border-radius: @base-radius;
+  -webkit-transition: all 0.25s;
 }
 
 .block-locale-language a:hover {
-  background-color: #5a5a5a;
+  background-color: rgba(67, 67, 67, 0.75);
 }
