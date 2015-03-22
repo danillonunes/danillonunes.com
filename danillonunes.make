@@ -42,7 +42,7 @@ projects[cdn][patch][1942230] = https://www.drupal.org/files/cdn-1942230-18-adva
 
 projects[cloudflare][version] = 1.0-beta4
 
-projects[context][version] = 3.3
+projects[context][version] = 3.6
 
 projects[ctools][version] = 1.4
 
