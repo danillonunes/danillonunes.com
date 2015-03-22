@@ -46,7 +46,7 @@ projects[context][version] = 3.6
 
 projects[ctools][version] = 1.7
 
-projects[entity][version] = 1.5
+projects[entity][version] = 1.6
 
 projects[entitycache][version] = 1.2
 
