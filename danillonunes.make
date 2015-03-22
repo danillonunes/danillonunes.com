@@ -56,7 +56,7 @@ projects[fast_dblog][version] = 1.1
 
 projects[features][version] = 1.0
 
-projects[google_analytics][version] = 2.0
+projects[google_analytics][version] = 2.1
 
 projects[hidden_captcha][version] = 1.0
 
