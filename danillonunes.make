@@ -103,7 +103,7 @@ projects[strongarm][version] = 2.0
 
 projects[system_status][version] = 2.7
 
-projects[token][version] = 1.5
+projects[token][version] = 1.6
 
 projects[transliteration][version] = 3.2
 
