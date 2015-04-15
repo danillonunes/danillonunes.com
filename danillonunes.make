@@ -119,7 +119,7 @@ projects[vinculum][download][branch] = d6f19b33dd9a8906c59472fa512cc7c30ae81d4f
 projects[wysiwyg][version] = 2.2
 projects[wysiwyg][patch][1853550] = http://drupal.org/files/wyiwyg-support_v4_ckeditor-1853550-42.patch
 
-projects[xmlsitemap][version] = 2.0
+projects[xmlsitemap][version] = 2.2
 
 ; Contrib themes
 ; ------------
