@@ -124,7 +124,7 @@ projects[xmlsitemap][version] = 2.2
 ; Contrib themes
 ; ------------
 
-projects[adminimal_theme][version] = 1.18
+projects[adminimal_theme][version] = 1.21
 
 projects[omega][version] = 3.1
 ; Fix conflict between Omega and Less
