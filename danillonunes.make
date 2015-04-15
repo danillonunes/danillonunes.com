@@ -62,7 +62,7 @@ projects[hidden_captcha][version] = 1.0
 
 projects[honeypot][version] = 1.17
 
-projects[i18n][version] = 1.11
+projects[i18n][version] = 1.12
 
 projects[jquery_update][version] = 2.2
 
