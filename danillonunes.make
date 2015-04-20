@@ -93,7 +93,7 @@ projects[reinvigorate][download][type] = git
 projects[reinvigorate][download][url] = http://git.drupal.org/sandbox/danillonunes/1555158.git
 projects[reinvigorate][download][branch] = 7.x-1.0-alpha2
 
-projects[respondjs][version] = 1.4
+projects[respondjs][version] = 1.5
 
 projects[smtp][version] = 1.2
 
