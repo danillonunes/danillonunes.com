@@ -68,15 +68,15 @@ projects[jquery_update][version] = 2.2
 
 projects[l10n_update][version] = 1.1
 
-projects[media][version] = 1.5
-
 projects[less][version] = 3.0
 
 projects[libraries][version] = 2.2
 
-projects[modernizr][version] = 2.1
+projects[media][version] = 1.5
 
 projects[memcache][version] = 1.5
+
+projects[modernizr][version] = 2.1
 
 projects[openidurl][version] = 1.5
 
