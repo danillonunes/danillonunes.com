@@ -12,13 +12,6 @@ $cookie_domain = 'danillonunes.com';
 $conf['reinvigorate_account'] = 'b7dpl-4y3vm2858r';
 
 /**
- * Enable CDN.
- */
-if (defined('CDN_ENABLED')) {
-  $conf['cdn_status'] = CDN_ENABLED;
-}
-
-/**
  * Add Memcache settings.
  */
 $conf['cache_backends'][] = 'sites/all/modules/memcache/memcache.inc';
