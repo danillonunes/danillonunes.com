@@ -3,12 +3,8 @@
 /**
  * Set base url for production site.
  */
-switch ($_SERVER['HTTP_HOST']) {
-  case 'danillonunes.com':
-    $base_url = 'http://danillonunes.com';
-    $cookie_domain = 'danillonunes.com';
-    break;
-}
+$base_url = 'https://danillonunes.com';
+$cookie_domain = 'danillonunes.com';
 
 /**
  * Reinvigorate variable.
