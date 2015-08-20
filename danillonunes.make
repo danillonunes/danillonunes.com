@@ -41,7 +41,7 @@ projects[cloudflare][version] = 1.0-beta4
 
 projects[context][version] = 3.6
 
-projects[ctools][version] = 1.7
+projects[ctools][version] = 1.9
 
 projects[disqus][version] = 1.12
 
