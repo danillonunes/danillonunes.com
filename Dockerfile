@@ -9,6 +9,10 @@ drush \
 git \
 --no-install-recommends \
 && apt-get clean \
-&& rm -rf /var/lib/apt/lists/*
+&& rm -rf /var/lib/apt/lists/* \
+&& /bin/sh -c 'git clone http://git.drupal.org/project/drush_build.git \
+$HOME/.drush/commands/drush_build && drush cc drush'
 
-CMD ping localhost
+COPY . /var/www
+
+RUN cd /var/www && make
