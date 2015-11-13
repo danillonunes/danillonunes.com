@@ -10,13 +10,13 @@ RUN DEBIAN_FRONTEND="noninteractive" && \
       wget \
     --no-install-recommends && \
 
+    sed -i "s/^;date\.timezone =$/date.timezone = UTC/" /etc/php5/cli/php.ini && \
+
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 COPY [".", "/var/www/danillonunes"]
 
 RUN /bin/bash -c "cd /var/www/danillonunes && make"
-
-RUN ls /var/www/danillonunes
 
 CMD ["/bin/bash"]
