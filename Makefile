@@ -1,7 +1,7 @@
 # Build danillonunes.net website
 
-drupal : .gitmodules danillonunes.make
-		drush build
+drupal : danillonunes.make
+		drush make danillonunes.make drupal
 
 clean :
 		rm -rf drupal
