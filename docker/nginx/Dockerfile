@@ -1,12 +1,12 @@
 FROM nginx
 
-ADD ["https://github.com/perusio/drupal-with-nginx/archive/D7.tar.gz", "/tmp"]
-COPY ["danillonunes.conf", "/tmp"]
+ADD ["https://github.com/perusio/drupal-with-nginx/archive/D7.tar.gz", "/"]
+COPY ["danillonunes.conf", "/"]
 
 RUN mkdir -p /var/www/danillonunes && \
 
     rm -rf /etc/nginx && \
-    cd /tmp && \
+    cd / && \
       tar -xzf D7.tar.gz && \
       mv drupal-with-nginx-D7 /etc/nginx && \
       rm -rf D7.tar.gz && \
