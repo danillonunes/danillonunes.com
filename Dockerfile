@@ -1,18 +1,22 @@
 FROM debian:jessie
 
-FROM mariadb
-FROM nginx
-FROM php:fpm
+RUN DEBIAN_FRONTEND="noninteractive" && \
+    apt-get update && \
+    apt-get install -qy \
+      ca-certificates \
+      drush \
+      git \
+      make \
+      wget \
+    --no-install-recommends && \
 
-RUN apt-get update && apt-get install -y \
-drush \
-git \
---no-install-recommends \
-&& apt-get clean \
-&& rm -rf /var/lib/apt/lists/* \
-&& /bin/sh -c 'git clone http://git.drupal.org/project/drush_build.git \
-$HOME/.drush/commands/drush_build && drush cc drush'
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-COPY . /var/www
+COPY [".", "/var/www/danillonunes"]
 
-RUN cd /var/www && make
+RUN /bin/bash -c "cd /var/www/danillonunes && make"
+
+RUN ls /var/www/danillonunes
+
+CMD ["/bin/bash"]
