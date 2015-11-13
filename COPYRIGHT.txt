@@ -1,9 +1,9 @@
-danillonunes.net is the source of http://danillonunes.net website.
+danillonunes.com is the source of http://danillonunes.com website.
 Copyright (c) since 2004 Marcus Danillo M. Nunes
 
-danillonunes.net name and logo should not be used without authorization.
+danillonunes.com name and logo should not be used without authorization.
 
-danillonunes.net build script may download third party programs which are owned
+danillonunes.com build script may download third party programs which are owned
 by its respective owners and are subject of the original owners' licenses.
 
 This program is free software; you can redistribute it and/or
