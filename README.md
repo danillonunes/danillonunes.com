@@ -4,4 +4,4 @@ Note that code developed outside danillonunes.net lives on their own servers and
 
 You must have Git and Drush in order to use the build makefile.
 
-You can build the site with a `drush make danillonunes.make drupal`, or, you might download Drush Build from http://drupal.org/sandbox/danillonunes/1919260 and use `make` instead.
+You can build the site with the command `make` or, if you don't have the make utility, you can start the drush make builder directly by running `drush make danillonunes.make drupal`.
