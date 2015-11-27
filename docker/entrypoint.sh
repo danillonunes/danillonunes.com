@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 cd http/sites/default/settings
 cp default.secret.settings.php secret.settings.php

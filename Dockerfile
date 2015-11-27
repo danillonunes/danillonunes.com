@@ -1,28 +1,31 @@
-FROM debian:jessie
+FROM alpine
+MAINTAINER Danillo Nunes <marcus@danillo.net>
 
-RUN DEBIAN_FRONTEND="noninteractive" && \
-    apt-get update && \
-    apt-get install -qy \
-      ca-certificates \
-      drush \
+RUN apk add --update \
+      curl \
       git \
       make \
-      wget \
-    --no-install-recommends && \
+      php-cli \
+      php-ctype \
+      php-json \
+      php-phar \
+    && \
 
-    sed -i "s/^;date\.timezone =$/date.timezone = UTC/" /etc/php5/cli/php.ini && \
+    curl http://files.drush.org/drush.phar -o drush.phar && \
+    chmod +x drush.phar && \
+    mv drush.phar /bin/drush && \
+    drush init && \
 
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/cache/apk/*
 
 WORKDIR "/danillonunes"
 
 COPY ["http", "http"]
+COPY ["danillonunes.make", "Makefile", "./"]
+COPY ["docker/entrypoint.sh", ".docker/"]
 
-COPY ["danillonunes.make", "Makefile", "docker/entrypoint.sh", "./"]
+VOLUME ["/danillonunes/http", "/danillonunes/files/public", "/danillonunes/files/private"]
 
-VOLUME ["/danillonunes/http", "/danillonunes/files", "/danillonunes/private"]
+RUN ["/bin/sh", "-c", "make"]
 
-RUN ["/bin/bash", "-c", "make"]
-
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT [".docker/entrypoint.sh"]
