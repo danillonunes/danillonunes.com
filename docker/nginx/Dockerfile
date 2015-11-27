@@ -1,9 +1,9 @@
 FROM nginx
 
-ADD ["https://github.com/perusio/drupal-with-nginx/archive/D7.tar.gz", "/"]
-COPY ["danillonunes.conf", "/"]
+ADD "https://github.com/perusio/drupal-with-nginx/archive/D7.tar.gz", "/"
+COPY "danillonunes.conf", "/"
 
-RUN mkdir -p /var/www/danillonunes && \
+RUN mkdir -p /danillonunes && \
 
     rm -rf /etc/nginx && \
     cd / && \

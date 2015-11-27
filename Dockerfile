@@ -15,8 +15,14 @@ RUN DEBIAN_FRONTEND="noninteractive" && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-COPY [".", "/var/www/danillonunes"]
+WORKDIR "/danillonunes"
 
-RUN /bin/bash -c "cd /var/www/danillonunes && make"
+COPY ["http", "http"]
 
-CMD ["/bin/bash"]
+COPY ["danillonunes.make", "Makefile", "docker/entrypoint.sh", "./"]
+
+VOLUME ["/danillonunes/http", "/danillonunes/files", "/danillonunes/private"]
+
+RUN ["/bin/bash", "-c", "make"]
+
+CMD ["/bin/bash", "-c"]
