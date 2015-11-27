@@ -13,6 +13,7 @@ RUN mkdir -p /danillonunes && \
 
       mv danillonunes.conf /etc/nginx/sites-available && \
 
+    # Disable modules that are missing from default Nginx install.
     sed -i s/upload_progress/#upload_progress/ /etc/nginx/nginx.conf && \
     sed -i s/aio/#aio/g /etc/nginx/apps/drupal/drupal.conf && \
     sed -i s/track_uploads/#track_uploads/g /etc/nginx/apps/drupal/drupal.conf && \
@@ -23,4 +24,4 @@ RUN mkdir -p /danillonunes && \
     ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD "nginx", "-g", "daemon off;"
