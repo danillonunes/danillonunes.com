@@ -25,4 +25,4 @@ VOLUME ["/danillonunes/http", "/danillonunes/files", "/danillonunes/private"]
 
 RUN ["/bin/bash", "-c", "make"]
 
-CMD ["/bin/bash", "-c"]
+ENTRYPOINT ["./entrypoint.sh"]
