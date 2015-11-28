@@ -1,7 +1,8 @@
 FROM nginx
+MAINTAINER Danillo Nunes <marcus@danillo.net>
 
-ADD "https://github.com/perusio/drupal-with-nginx/archive/D7.tar.gz", "/"
-COPY "danillonunes.conf", "/"
+ADD ["https://github.com/perusio/drupal-with-nginx/archive/D7.tar.gz", "/"]
+COPY ["danillonunes.conf", "/"]
 
 RUN mkdir -p /danillonunes && \
 
@@ -24,4 +25,4 @@ RUN mkdir -p /danillonunes && \
     ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
 
-CMD "nginx", "-g", "daemon off;"
+CMD ["nginx", "-g", "daemon off;"]
