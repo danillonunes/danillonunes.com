@@ -1,11 +1,10 @@
 FROM alpine
 MAINTAINER Danillo Nunes <marcus@danillo.net>
 
+# Install dependencies
 RUN apk add --update \
       curl \
       git \
-      make \
-      php-cli \
       php-ctype \
       php-json \
       php-phar \
@@ -18,13 +17,17 @@ RUN apk add --update \
 
     rm -rf /var/cache/apk/*
 
+# Set work directory
 WORKDIR "/danillonunes"
 
-COPY ["danillonunes.make", "Makefile", "./"]
-RUN ["/bin/sh", "-c", "make"]
+# Build Drupal site
+COPY ["danillonunes.make", "./"]
+RUN drush make danillonunes.make drupal
 
+# Copy http directory and expose volumes
 COPY ["http", "http"]
 VOLUME ["/danillonunes/http", "/danillonunes/files/public", "/danillonunes/files/private"]
 
+# Setup entrypoint
 COPY ["docker/entrypoint.sh", ".docker/"]
 ENTRYPOINT [".docker/entrypoint.sh"]
