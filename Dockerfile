@@ -20,12 +20,11 @@ RUN apk add --update \
 
 WORKDIR "/danillonunes"
 
-COPY ["http", "http"]
 COPY ["danillonunes.make", "Makefile", "./"]
-COPY ["docker/entrypoint.sh", ".docker/"]
-
-VOLUME ["/danillonunes/http", "/danillonunes/files/public", "/danillonunes/files/private"]
-
 RUN ["/bin/sh", "-c", "make"]
 
+COPY ["http", "http"]
+VOLUME ["/danillonunes/http", "/danillonunes/files/public", "/danillonunes/files/private"]
+
+COPY ["docker/entrypoint.sh", ".docker/"]
 ENTRYPOINT [".docker/entrypoint.sh"]
