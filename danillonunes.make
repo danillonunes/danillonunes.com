@@ -134,8 +134,8 @@ projects[omega][patch][1627478] = http://drupal.org/files/preprocess-aggregation
 ; ------------
 
 libraries[ckeditor][download][type] = file
-libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0.1/ckeditor_4.0.1_full.zip
-libraries[ckeditor][download][md5] = d47c37acf2d03ffe6ad39f55e00b099b
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0.1/ckeditor_4.0.1_full.tar.gz
+libraries[ckeditor][download][md5] = 917a9d1c0ccf9166fe7668ed21973760
 
 libraries[lessphp][download][type] = file
 libraries[lessphp][download][url] = http://leafo.net/lessphp/src/lessphp-0.3.8.tar.gz
