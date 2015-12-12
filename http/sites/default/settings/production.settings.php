@@ -6,17 +6,6 @@
 $base_url = 'https://danillonunes.com';
 $cookie_domain = 'danillonunes.com';
 
-$current_schema = $_SERVER['HTTPS'] == 'on' ? 'https' : 'http';
-$current_host = $_SERVER['HTTP_HOST'];
-
-/**
- * Redirect alternative domains.
- */
-if ($base_url !== "$current_schema://$current_host") {
-  header("Location: $base_url/{$_REQUEST['q']}");
-  die();
-}
-
 /**
  * CloudFlare IP.
  */
