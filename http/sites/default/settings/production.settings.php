@@ -13,7 +13,7 @@ $current_host = $_SERVER['HTTP_HOST'];
  * Redirect alternative domains.
  */
 if ($base_url !== "$current_schema://$current_host") {
-  drupal_goto("$current_schema://$current_host/$base_url", array('absolute' => TRUE));
+  drupal_goto("$base_url/{$_REQUEST['q']}", array('absolute' => TRUE));
 }
 
 /**
