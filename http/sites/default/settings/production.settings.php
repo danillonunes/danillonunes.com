@@ -17,6 +17,15 @@ if ($base_url !== "$current_schema://$current_host") {
 }
 
 /**
+ * CloudFlare IP.
+ */
+if ($_SERVER['HTTP_VIA'] == '2.0 cloudflare') {
+  $conf['reverse_proxy'] = TRUE;
+  $conf['reverse_proxy_addresses'] = $_SERVER['HTTP_X_REAL_IP'];
+  $conf['reverse_proxy_header'] = 'HTTP_CF_CONNECTING_IP';
+}
+
+/**
  * Reinvigorate variable.
  */
 $conf['reinvigorate_account'] = 'b7dpl-4y3vm2858r';
