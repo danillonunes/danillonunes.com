@@ -1,4 +1,4 @@
-FROM php:5-fpm
+FROM php:fpm
 MAINTAINER Danillo Nunes <marcus@danillo.net>
 
 RUN apt-get update && apt-get install -y \
