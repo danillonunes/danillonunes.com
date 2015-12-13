@@ -1,19 +1,12 @@
-sudo: required
+sudo: false
 services:
   - docker
 
-env:
-  DOCKER_COMPOSE_VERSION: 1.5.2
-
 before_install:
-  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo rm /usr/local/bin/docker-compose
-  - sudo mv docker-compose /usr/local/bin
   - docker-compose up -d
 
 script:
   - docker ps -a | grep mariadb
-  - docker ps -a | grep danillonunescom
-  - docker ps -a | grep danillonunescom_php
-  - docker ps -a | grep danillonunescom_nginx
+  - docker ps -a | grep _danillonunes
+  - docker ps -a | grep _php
+  - docker ps -a | grep _nginx
