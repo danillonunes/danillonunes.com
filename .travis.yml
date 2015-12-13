@@ -1,17 +1,17 @@
 sudo: required
-
-language: php
-
 services:
   - docker
 
+env:
+  DOCKER_COMPOSE_VERSION: 1.4.1
+
 before_install:
-  - docker build -t danillonunes .
-  - docker build -t danillonunes_php ./docker/php
-  - docker build -t danillonunes_nginx ./docker/nginx
-  - docker pull mariadb
-  - docker run -d --name mariadb -e MYSQL_DATABASE=danillonunes -e MYSQL_USER=danillonunes -e MYSQL_PASSWORD=danillonunes mariadb
-  - docker run -d --name danillonunes -e DB_NAME=danillonunes -e DB_USER=danillonunes -e DB_PASSWORD=danillonunes -e DB_HOST=mariadb danillonunes
-  - docker run -d --name danillonunes_php --link mariadb:mysql --volumes-from danillonunes -p 9000:9000 danillonunes_php
-  - docker run -d --name danillonunes_nginx -e PHP_CGI_1=danillonunes_php:9000 --volumes-from danillonunes danillonunes_nginx
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo rm /usr/local/bin/docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+script:
+  - docker-compose build
+  - docker-compose up
   - docker ps -a
