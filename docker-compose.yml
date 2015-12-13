@@ -28,7 +28,7 @@ mariadb:
     MYSQL_ROOT_PASSWORD: danillonunes
 
 php:
-  image: php:fpm
+  build: docker/php
   expose:
     - "9000:9000"
   volumes_from:
