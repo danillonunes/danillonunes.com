@@ -10,8 +10,10 @@ before_install:
   - chmod +x docker-compose
   - sudo rm /usr/local/bin/docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - docker-compose build
+  - docker-compose up -d
 
 script:
-  - docker-compose up -d
-  - docker ps -a
+  - docker ps -a | grep mariadb
+  - docker ps -a | grep danillonunescom
+  - docker ps -a | grep danillonunescom_php
+  - docker ps -a | grep danillonunescom_nginx
