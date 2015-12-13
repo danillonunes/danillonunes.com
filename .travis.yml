@@ -1,13 +1,17 @@
+sudo: required
+
 language: php
 
-php:
-  - 5.4
+services:
+  - docker
 
-before_script:
- - pyrus channel-discover pear.drush.org
- - pyrus install drush/drush
- - git clone http://git.drupal.org/project/drush_build.git ~/.drush/commands/build
- - phpenv rehash
- - drush cache-clear drush
-
-script: make && make test && make clean
+before_install:
+  - docker build -t danillonunes .
+  - docker build -t danillonunes_php ./docker/php
+  - docker build -t danillonunes_nginx ./docker/nginx
+  - docker pull mariadb
+  - docker run -d --name mariadb -e MYSQL_DATABASE=danillonunes -e MYSQL_USER=danillonunes -e MYSQL_PASSWORD=danillonunes mariadb
+  - docker run -d --name danillonunes -e DB_NAME=danillonunes -e DB_USER=danillonunes -e DB_PASSWORD=danillonunes -e DB_HOST=mariadb danillonunes
+  - docker run -d --name danillonunes_php --link mariadb:mysql --volumes-from danillonunes -p 9000:9000 danillonunes_php
+  - docker run -d --name danillonunes_nginx -e PHP_CGI_1=danillonunes_php:9000 --volumes-from danillonunes danillonunes_nginx
+  - docker ps -a
