@@ -29,7 +29,7 @@ mariadb:
 
 php:
   build: docker/php
-  expose:
+  ports:
     - "9000:9000"
   volumes_from:
     - danillonunes
