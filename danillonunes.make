@@ -47,7 +47,7 @@ projects[disqus][version] = 1.12
 
 projects[entity][version] = 1.7
 
-projects[entitycache][version] = 1.2
+projects[entitycache][version] = 1.5
 
 projects[environment_indicator][version] = 1.1
 
