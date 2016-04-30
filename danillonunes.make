@@ -17,7 +17,7 @@ api = 2
 ; Core project
 ; ------------
 
-projects[drupal][version] = 7.41
+projects[drupal][version] = 7.43
 
 ; Contrib modules
 ; ------------
