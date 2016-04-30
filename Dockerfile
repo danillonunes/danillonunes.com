@@ -13,7 +13,7 @@ RUN apk add --update \
     curl http://files.drush.org/drush.phar -o drush.phar && \
     chmod +x drush.phar && \
     mv drush.phar /bin/drush && \
-    drush init && \
+    drush init -y && \
 
     rm -rf /var/cache/apk/*
 
