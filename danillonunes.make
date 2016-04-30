@@ -79,7 +79,7 @@ projects[modernizr][version] = 2.1
 
 projects[openidurl][version] = 1.5
 
-projects[pathauto][version] = 1.2
+projects[pathauto][version] = 1.3
 
 projects[pathologic][version] = 2.12
 
