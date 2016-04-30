@@ -45,7 +45,7 @@ projects[ctools][version] = 1.9
 
 projects[disqus][version] = 1.12
 
-projects[entity][version] = 1.6
+projects[entity][version] = 1.7
 
 projects[entitycache][version] = 1.2
 
