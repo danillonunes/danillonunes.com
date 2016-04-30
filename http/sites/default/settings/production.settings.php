@@ -9,7 +9,7 @@ $cookie_domain = 'danillonunes.com';
 /**
  * CloudFlare IP.
  */
-if ($_SERVER['HTTP_VIA'] == '2.0 cloudflare') {
+if (isset($_SERVER['HTTP_VIA']) && $_SERVER['HTTP_VIA'] == '2.0 cloudflare') {
   $conf['reverse_proxy'] = TRUE;
   $conf['reverse_proxy_addresses'] = array($_SERVER['HTTP_X_REAL_IP']);
   $conf['reverse_proxy_header'] = 'HTTP_CF_CONNECTING_IP';
