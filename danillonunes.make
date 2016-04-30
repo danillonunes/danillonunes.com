@@ -24,7 +24,7 @@ projects[drupal][version] = 7.43
 
 projects[admin_menu][version] = 3.0-rc5
 
-projects[adminimal_admin_menu][version] = 1.6
+projects[adminimal_admin_menu][version] = 1.7
 
 projects[advagg][version] = 2.14
 
