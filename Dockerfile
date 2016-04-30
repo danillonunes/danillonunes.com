@@ -26,7 +26,7 @@ RUN drush make danillonunes.make drupal
 
 # Copy http directory and expose volumes
 COPY ["http", "http"]
-VOLUME ["/danillonunes", "/danillonunes/http", "/danillonunes/files/public", "/danillonunes/files/private"]
+VOLUME ["/danillonunes", "/danillonunes/files/public", "/danillonunes/files/private"]
 
 # Setup entrypoint
 COPY ["docker/entrypoint.sh", ".docker/"]
